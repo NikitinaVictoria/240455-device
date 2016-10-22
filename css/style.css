@@ -1,0 +1,23 @@
+.item-slide {
+  display: none;
+}
+
+#btn-monopode:checked ~ .item-slider #slide-monopod,
+#btn-fittracker:checked ~ .item-slider #slide-fittracker,
+#btn-quadrocopter:checked ~ .item-slider #slide-quadrocopter {
+  display: block;
+}
+
+main > input[name="services"] {
+  display: none;
+}
+
+.services-slide {
+  display: none;
+}
+
+#btn-delivery:checked ~ .services-slider #slide-delivery,
+#btn-warranty:checked ~ .services-slider #slide-warranty,
+#btn-credit:checked ~ .services-slider #slide-credit {
+  display: block;
+}
