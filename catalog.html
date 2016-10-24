@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body class="inner page">
+  <header class="wrapper">
+    <nav class="main-navigation">
+      <h1><a class="logo" href="index.html"><img src="img/index-logo.png" width="163" height="36" alt="Девайс">Девайс</a></h1>
+      <form class="site-seacrh" action="#" method="get">
+        <input name="search" type="text" placeholder="Поиск по сайту">
+        <button type="submit"></button>
+      </form>
+      <ul class="user-navigation">
+        <li>
+          <a class="profile-link" href="#">Валентин Петухов</a>
+          <button type="button" name="log-out">Выйти</button>
+        </li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+      <ul class="site-navigation">
+        <li><a href="catalog.html">Каталог товаров</a>
+          <ul>
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a>Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнесс-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1>Моноподы для селфи</h1>
+    <nav class="breadcrumbs">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a>Моноподы для селфи</a></li>
+      </ul>
+    </nav>
+    <aside class="search">
+      <div class="search-title">Фильтр</div>
+      <form action="#" method="post">
+        <div class="search-price">
+          <div class="search-range-title">Стоимость:</div>
+          <input type="range" name="search-range">
+        </div>
+        <div class="color-search">
+          <p>Цвет</p>
+          <input type="checkbox" id="black-field" name="color" value="black" checked>
+          <label for="black-field">Черный</label>
+          <input type="checkbox" id="white-field" name="color" value="white">
+          <label for="white-field">Белый</label>
+          <input type="checkbox" id="blue-field" name="color" value="blue" checked>
+          <label for="blue-field">Синий</label>
+          <input type="checkbox" id="red-field" name="color" value="red" checked>
+          <label for="red-field">Красный</label>
+          <input type="checkbox" id="pink-field" name="color" value="pink">
+          <label for="pink-field">Розовый</label>
+        </div>
+        <div class="bluetooth-search">
+          <p>Bluetooth</p>
+          <input type="radio" id="bluetooth-field" name="bluetooth" value="yes">
+          <label for="bluetooth-field">Есть</label>
+          <input type="radio" id="not-bluetooth-field" name="bluetooth" value="not">
+          <label for="not-bluetooth-field">Нет</label>
+        </div>
+        <button type="button" name="button">Показать</button>
+      </form>
+    </aside>
+
+  </main>
+  <footer class="wrapper">
+    <nav class="footer-navigation">
+      <h1><a class="footer-logo">Девайс</a></h1>
+      <ul class="footer-user-navigation">
+        <li><a class="login-link" href="#login">Войти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+      <ul class="footer-site-navigation">
+        <li>г. Москва, ул. Строителей, 15</li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li>Тел.: +7 (495) 495-95-95</li>
+      </ul>
+    </nav>
+    <section class="footer-social">
+      <a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span>Фейсбук</a> <!-- спрайт -->
+      <a class="social-btn social-btn-inst" href="#"><span class="icon-instagram"></span>Инстаграм</a> <!-- спрайт -->
+      <a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a> <!-- спрайт -->
+    </section>
+    <section class="footer-copyright">
+      <a href="https://htmlacademy.ru">HTML Academy</a><!-- спрайт -->
+    </section>
+  </footer>
+</body>
+</html>
