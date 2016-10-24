@@ -5,7 +5,7 @@
   <title>HTML Academy: Девайс</title>
 </head>
 <body class="inner page">
-  <header class="wrapper">
+  <header class="container">
     <nav class="main-navigation">
       <h1><a class="logo" href="index.html"><img src="img/index-logo.png" width="163" height="36" alt="Девайс">Девайс</a></h1>
       <form class="site-seacrh" action="#" method="get">
@@ -73,12 +73,68 @@
           <input type="radio" id="not-bluetooth-field" name="bluetooth" value="not">
           <label for="not-bluetooth-field">Нет</label>
         </div>
-        <button type="button" name="button">Показать</button>
+        <a href="#">Показать</a>
       </form>
     </aside>
-
+    <section class="result">
+      <div class="sorting">
+        <div class="sorting-category">
+          <span>Сортировка:</span>
+          <ul>
+            <li>
+              <a href="#" class="category-price">По цене</a>
+            </li>
+            <li>
+              <a href="#" class="category-type">По типу</a>
+            </li>
+            <li>
+              <a href="#" class="category-rating">По популярности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sorting-top-down">
+          <span class="top">По возрастанию</span>
+          <span class="down">По убыванию</span>
+        </div>
+      </div>
+      <article>
+        <img src="#" width="360" height="380" alt="Любительская селфи-палка">
+        <p>
+          <a href="">Любительская селфи-палка</a>
+          <span>500 руб.</span>
+        </p>
+      </article>
+      <article>
+        <img src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+        <p>
+          <a href="">Профессиональная селфи-палка</a>
+          <span>1 500 руб.</span>
+        </p>
+      </article>
+      <article>
+        <img src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+        <p>
+          <a href="">Непотопляемая селфи-палка</a>
+          <span>2 500 руб.</span>
+        </p>
+      </article>
+      <article>
+        <img src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+        <p>
+          <a href="">Селфи-палка «Следуй за мной»</a>
+          <span>4 900 руб.</span>
+        </p>
+      </article>
+      <div class="paginator">
+        <a href="#">Назад</a>
+        <a>1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Вперед</a>
+      </div>
+    </section>
   </main>
-  <footer class="wrapper">
+  <footer class="container">
     <nav class="footer-navigation">
       <h1><a class="footer-logo">Девайс</a></h1>
       <ul class="footer-user-navigation">
