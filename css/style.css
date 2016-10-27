@@ -1,3 +1,20 @@
+html,
+body {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #464646;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3.3571em;
+  line-height: 1.2;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+}
+
 .item-slide {
   display: none;
 }
@@ -20,4 +37,12 @@ main > input[name="services"] {
 #btn-warranty:checked ~ .services-slider #slide-warranty,
 #btn-credit:checked ~ .services-slider #slide-credit {
   display: block;
+}
+
+.tm img {
+  filter: grayscale(100%) opacity(0.2);
+}
+
+.tm img:hover {
+  filter: grayscale(0) opacity(1);
 }
