@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="container">
-      <h1><a class="logo"><img src="img/index-logo.png" width="163" height="36" alt="Девайс">Девайс</a></h1>
+      <h1><a class="logo"><img class="svg" src="img/logosvg.svg" fill=red width="163" height="36" alt="Девайс">Девайс</a></h1>
       <form class="site-seacrh" action="#" method="get">
         <input name="search" type="text" placeholder="Поиск по сайту">
         <button type="submit"></button>
@@ -44,7 +45,7 @@
       <input type="radio" id="btn-credit" name="services">
       <section class="item-slider">
         <article class="item-slide monopode" id="slide-monopod">
-          <img src="#" width="384" height="486" alt="Монопод для селфи">
+          <img src="img/monopode.png" width="384" height="486" alt="Монопод для селфи">
           <span>01</span>
           <div class="title">Делай селфи, как Бен Стиллер!</div>
           <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -79,7 +80,7 @@
           </ul>-->
         </article>
         <article class="item-slide fittracker" id="slide-fittracker">
-          <img src="#" width="345" height="485" alt="Фитнес-браслет">
+          <img src="img/fittracker.png" width="345" height="485" alt="Фитнес-браслет">
           <span>02</span>
           <div class="title">Худеем правильно!</div>
           <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -96,7 +97,7 @@
           </ul> -->
         </article>
         <article class="item-slide quadrocopter" id="slide-quadrocopter">
-          <img src="#" width="526" height="334" alt="Квадрокоптер">
+          <img src="img/quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
           <span>03</span>
           <div class="title">Порхает как бабочка, жалит как пчела!</div>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -190,16 +191,16 @@
       <section class="tm">
         <ul>
           <li>
-            <a href="#"><img src="#" width="260" height="100" alt="Dji"></a>
+            <a href="#"><img src="img/dji.jpg" width="260" height="100" alt="Dji"></a>
           </li>
           <li>
-            <a href="#"><img src="#" width="260" height="100" alt="SP Gadgets"></a>
+            <a href="#"><img src="img/spgadgets.jpg" width="260" height="100" alt="SP Gadgets"></a>
           </li>
           <li>
-            <a href="#"><img src="#" width="260" height="100" alt="GoPro"></a>
+            <a href="#"><img src="img/gopro.jpg" width="260" height="100" alt="GoPro"></a>
           </li>
           <li>
-            <a href="#"><img src="#" width="260" height="100" alt="Vive"></a>
+            <a href="#"><img src="img/vive.jpg" width="260" height="100" alt="Vive"></a>
           </li>
         </ul>
       </section>
@@ -216,7 +217,9 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="map" id="map"></div>
+        <div class="map" id="map">
+          <img src="img/map.jpg" width="560" height="222" alt="Карта" />
+        </div>
         <a class="write-link" href="#write">Напишите нам</a>
       </section>
     </main>
