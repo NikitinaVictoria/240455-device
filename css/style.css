@@ -27,6 +27,36 @@ h3 {
   display: none;
 }
 
+.logo {
+  font-weight: 800;
+  font-size: 26.459px;
+  font-family: Gilroy;
+}
+
+.logo-header {
+  fill: #000000;
+}
+
+a .logo-header:hover {
+  fill: #464646;
+}
+
+a .logo-header:active {
+  fill: #666666;
+}
+
+.logo-footer {
+  fill: #f7e184;
+}
+
+a .logo-footer:hover {
+  fill: #f0c52e;
+}
+
+a .logo-footer:active {
+  opacity: 0.3;
+}
+
 #btn-monopode:checked ~ .item-slider #slide-monopod,
 #btn-fittracker:checked ~ .item-slider #slide-fittracker,
 #btn-quadrocopter:checked ~ .item-slider #slide-quadrocopter {
