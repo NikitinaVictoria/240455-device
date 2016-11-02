@@ -7,46 +7,48 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-      <h1>
-        <span class="visually-hidden">Девайс</span>
-        <svg class="logo logo-header" xmlns="http://www.w3.org/2000/svg" width="164" height="38" viewBox="0 0 164 36">
-          <text transform="translate(-2.32 34.511) scale(1.827 1.814)">DEVICE</text>
-        </svg>
-      </h1>
-      <form class="site-search" action="#" method="get">
-        <input name="search" type="text" placeholder="Поиск по сайту">
-        <button type="submit"></button>
-      </form>
-      <nav class="main-navigation">
-        <ul class="user-navigation">
-          <li><a class="link-login" href="#login">Войти</a></li>
-          <li><a class="link-compare" href="#">Сравнить</a></li>
-          <li><a class="link-cart" href="#">Корзина</a></li>
-        </ul>
-        <ul class="site-navigation">
-          <li><a class="link-catalog" href="#">Каталог товаров</a>
-            <div class="catalog-navigation">
-              <ul class="list-1">
-                <li><a href="#"><span class="capitalize">Виртуальная</span> реальность</a></li>
-                <li><a href="catalog.html"><span class="capitalize">Моноподы</span> для селфи</a></li>
-                <li><a href="#"><span class="capitalize">Экшн</span>-камеры</a></li>
-              </ul>
-              <ul class="list-2">
-                <li><a href="#"><span class="capitalize">Фитнесс</span>-браслеты</a></li>
-                <li><a href="#"><span class="capitalize">Умные</span> часы</a></li>
-              </ul>
-              <ul class="list-3">
-                <li><a href="#"><span class="capitalize">Квадрокоптеры</span></a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a class="link-delivery" href="#">Доставка</a></li>
-          <li><a class="link-warranty" href="#">Гарантия</a></li>
-          <li><a class="link-contacts" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header>
+        <h1>
+          <span class="visually-hidden">Девайс</span>
+          <svg class="logo logo-header" xmlns="http://www.w3.org/2000/svg" width="164" height="38" viewBox="0 0 164 36">
+            <text transform="translate(-2.32 34.511) scale(1.827 1.814)">DEVICE</text>
+          </svg>
+        </h1>
+        <form class="site-search" action="#" method="get">
+          <input name="search" type="text" placeholder="Поиск по сайту">
+          <button type="submit"></button>
+        </form>
+        <nav class="main-navigation">
+          <ul class="user-navigation">
+            <li><a class="link-login" href="#login">Войти</a></li>
+            <li><a class="link-compare" href="#">Сравнить</a></li>
+            <li><a class="link-cart" href="#">Корзина</a></li>
+          </ul>
+          <ul class="site-navigation">
+            <li><a class="link-catalog" href="#">Каталог товаров</a>
+              <div class="catalog-navigation">
+                <ul class="list-1">
+                  <li><a href="#"><span class="capitalize">Виртуальная</span> реальность</a></li>
+                  <li><a href="catalog.html"><span class="capitalize">Моноподы</span> для селфи</a></li>
+                  <li><a href="#"><span class="capitalize">Экшн</span>-камеры</a></li>
+                </ul>
+                <ul class="list-2">
+                  <li><a href="#"><span class="capitalize">Фитнесс</span>-браслеты</a></li>
+                  <li><a href="#"><span class="capitalize">Умные</span> часы</a></li>
+                </ul>
+                <ul class="list-3">
+                  <li><a href="#"><span class="capitalize">Квадрокоптеры</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="link-delivery" href="#">Доставка</a></li>
+            <li><a class="link-warranty" href="#">Гарантия</a></li>
+            <li><a class="link-contacts" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="container">
       <input type="radio" id="btn-monopode" name="item" checked>
       <input type="radio" id="btn-fittracker" name="item">
@@ -135,9 +137,9 @@
           </ul> -->
         </article>
         <div class="item-slider-controls">
-          <label for="btn-monopode"></label>
-          <label for="btn-fittracker"></label>
-          <label for="btn-quadrocopter"></label>
+          <label for="btn-monopode">монопод</label>
+          <label for="btn-fittracker">браслет</label>
+          <label for="btn-quadrocopter">квадрокоптер</label>
         </div>
       </section>
       <nav class="item-navigation">
