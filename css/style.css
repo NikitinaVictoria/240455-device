@@ -44,6 +44,25 @@ header h1 {
   text-indent: -9999px;
 }
 
+
+.logo {
+  font-weight: 800;
+  font-size: 26.459px;
+  font-family: Gilroy;
+}
+
+.logo-header {
+  fill: #000000;
+}
+
+a .logo-header:hover {
+  fill: #464646;
+}
+
+a .logo-header:active {
+  fill: #666666;
+}
+
 .site-search {
   display: inline;
 }
@@ -60,8 +79,8 @@ header h1 {
 
   list-style: none;
   font-size: 0;
-  text-align: right;
   vertical-align: top;
+  text-align: right;
 }
 
 .user-navigation li {
@@ -178,6 +197,23 @@ header h1 {
   display: block;
 }
 
+
+main > input[name="services"],
+main > input[name="item"] {
+  display: none;
+}
+
+
+.item-slide {
+  display: none;
+}
+
+#btn-monopode:checked ~ .item-slider #slide-monopod,
+#btn-fittracker:checked ~ .item-slider #slide-fittracker,
+#btn-quadrocopter:checked ~ .item-slider #slide-quadrocopter {
+  display: block;
+}
+
 .item-slider {
   position: relative;
 
@@ -209,6 +245,14 @@ header h1 {
   z-index: 2;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 3.3571em;
+  line-height: 1.2;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+}
+
 .item-slide h2 {
   position: absolute;
   top: -141.7px;
@@ -217,12 +261,6 @@ header h1 {
 
   width: 390px;
   margin: 0;
-
-  font-weight: bold;
-  font-size: 3.3571em;
-  line-height: 1.2;
-  font-family: "Gilroy", "Arial", sans-serif;
-  color: #000000;
 }
 
 .quadrocopter h2 {
@@ -310,6 +348,52 @@ header h1 {
   color: #464646;
 }
 
+/*ITEM NAVIGATION*/
+
+.item-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.item-navigation li {
+  display: inline-block;
+  margin-right: 40px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Gilroy";
+  vertical-align: top;
+  text-align: left;
+  color: #000000;
+}
+
+.item-navigation li:nth-child(6n) {
+  margin-right: 0;
+}
+
+.item-navigation a {
+  display: block;
+  width: 160px;
+}
+
+.item::before {
+  content: "";
+
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 40px;
+
+  background-color: #f7e296;
+}
+
+
+
+
 
 h3 {
   font-weight: bold;
@@ -317,51 +401,6 @@ h3 {
   line-height: 1.2;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
-}
-
-.item-slide {
-  display: none;
-}
-
-.logo {
-  font-weight: 800;
-  font-size: 26.459px;
-  font-family: Gilroy;
-}
-
-.logo-header {
-  fill: #000000;
-}
-
-a .logo-header:hover {
-  fill: #464646;
-}
-
-a .logo-header:active {
-  fill: #666666;
-}
-
-.logo-footer {
-  fill: #f7e184;
-}
-
-a .logo-footer:hover {
-  fill: #f0c52e;
-}
-
-a .logo-footer:active {
-  opacity: 0.3;
-}
-
-#btn-monopode:checked ~ .item-slider #slide-monopod,
-#btn-fittracker:checked ~ .item-slider #slide-fittracker,
-#btn-quadrocopter:checked ~ .item-slider #slide-quadrocopter {
-  display: block;
-}
-
-main > input[name="services"],
-main > input[name="item"] {
-  display: none;
 }
 
 .services-slide {
@@ -374,10 +413,14 @@ main > input[name="item"] {
   display: block;
 }
 
-.tm img {
-  filter: grayscale(100%) opacity(0.2);
+.logo-footer {
+  fill: #f7e184;
 }
 
-.tm img:hover {
-  filter: grayscale(0) opacity(1);
+a .logo-footer:hover {
+  fill: #f0c52e;
+}
+
+a .logo-footer:active {
+  opacity: 0.3;
 }
