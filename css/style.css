@@ -403,6 +403,7 @@ h2 {
 
 .services-slider {
   width: 1397px;
+  margin-bottom: 83px;
   margin-left: -95.5px;
 
   font-size: 0;
@@ -472,6 +473,26 @@ h2 {
   text-align: left;
 }
 
+/*TM*/
+
+.tm {
+  font-size: 0;
+  margin-bottom: 93px;
+}
+
+.tm a {
+  display: inline-block;
+  width: 260px;
+  height: 100px;
+  margin-right: 40px;
+
+  vertical-align: top;
+  background-color: red;/*удалить*/
+}
+
+.tm a:nth-child(4n) {
+  margin-right: 0;
+}
 
 
 
