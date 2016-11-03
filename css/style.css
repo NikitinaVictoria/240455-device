@@ -26,12 +26,13 @@ body {
 header {
   position: relative;
 
-  width: 1058px;
-  margin: 40px 0 100px;
+  margin-top: 40px;
+  margin-bottom: 100px;
   padding: 50px 51px 55px;
 
   background-color: #f7e296;
 }
+
 
 header h1 {
   position: absolute;
@@ -197,12 +198,12 @@ a .logo-header:active {
   display: block;
 }
 
+/*ITEM-SLIDER*/
 
 main > input[name="services"],
 main > input[name="item"] {
   display: none;
 }
-
 
 .item-slide {
   display: none;
@@ -348,7 +349,7 @@ h2 {
   color: #464646;
 }
 
-/*ITEM NAVIGATION*/
+/*ITEM-NAVIGATION*/
 
 .item-navigation {
   margin: 0;
@@ -356,6 +357,7 @@ h2 {
 
   list-style: none;
   font-size: 0;
+  margin-bottom: 90px;
 }
 
 .item-navigation li {
@@ -391,6 +393,98 @@ h2 {
   background-color: #f7e296;
 }
 
+/*SERVICES-SLIDER*/
+
+#btn-delivery:checked ~ .services-slider #slide-delivery,
+#btn-warranty:checked ~ .services-slider #slide-warranty,
+#btn-credit:checked ~ .services-slider #slide-credit {
+  display: inline-block;
+}
+
+.services-slider {
+  width: 1397px;
+  margin-left: -95.5px;
+
+  font-size: 0;
+
+  background-color: #e5e5e5;
+}
+
+.services-slide {
+  display: none;
+  width: 689px;
+  margin-top: -40px;
+
+  background-repeat: no-repeat;
+}
+
+.delivery {
+  background-image: url("../img/delivery.png");
+  background-position: 553px 0;
+}
+
+.warranty {
+  background-image: url("../img/warranty.png");
+  background-position: 518px 0;
+}
+
+.credit {
+  background-image: url("../img/credit.png");
+  background-position: 533px 0;
+}
+
+.services-slider-controls {
+  display: inline-block;
+  margin-top: -30px;
+  margin-left: 95.5px;
+  padding-bottom: 85px;
+
+  vertical-align: top;
+}
+
+.services-slider-controls label {
+  display: block;
+  width: 138px;
+  margin-bottom: 25px;
+  padding-right: 140px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: "Gilroy";
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-slide h2 {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 47px;
+}
+
+.services-slide p {
+  width: 440px;
+  padding-bottom: 85px;
+
+  font-size: 15px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -401,16 +495,6 @@ h3 {
   line-height: 1.2;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
-}
-
-.services-slide {
-  display: none;
-}
-
-#btn-delivery:checked ~ .services-slider #slide-delivery,
-#btn-warranty:checked ~ .services-slider #slide-warranty,
-#btn-credit:checked ~ .services-slider #slide-credit {
-  display: block;
 }
 
 .logo-footer {
