@@ -8,7 +8,7 @@
   </head>
   <body class="inner-page">
     <div class="container">
-      <header>
+      <header class="main-header">
         <h1>
           <span class="visually-hidden">Девайс</span>
           <a href="index.html">
@@ -59,24 +59,24 @@
         </ul>
       </header>
     </div>
-    <main class="container">
-      <h2>Моноподы для селфи</h2>
-      <nav class="breadcrumbs">
-        <ul>
+    <main class="container clearfix">
+      <header class="inner-header">
+        <h2>Моноподы для селфи</h2>
+        <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог товаров</a></li>
           <li><a>Моноподы для селфи</a></li>
         </ul>
-      </nav>
+      </header>
       <aside class="search">
-        <div class="search-title">Фильтр</div>
+        <div class="search-title">Фильтр:</div>
         <form action="#" method="post">
           <div class="search-price">
-            <div class="search-range-title">Стоимость:</div>
+            <div class="title search-range">Стоимость:</div>
             <input type="range" name="search-range">
           </div>
-          <div class="color-search">
-            <p>Цвет</p>
+          <div class="fieldset color-search">
+            <p class="title">Цвет</p>
             <input type="checkbox" id="black-field" name="color" value="black" checked>
             <label for="black-field">Черный</label>
             <input type="checkbox" id="white-field" name="color" value="white">
@@ -88,14 +88,14 @@
             <input type="checkbox" id="pink-field" name="color" value="pink">
             <label for="pink-field">Розовый</label>
           </div>
-          <div class="bluetooth-search">
-            <p>Bluetooth</p>
+          <div class="fieldset bluetooth-search">
+            <p class="title">Bluetooth</p>
             <input type="radio" id="bluetooth-field" name="bluetooth" value="yes">
             <label for="bluetooth-field">Есть</label>
             <input type="radio" id="not-bluetooth-field" name="bluetooth" value="not">
             <label for="not-bluetooth-field">Нет</label>
           </div>
-          <a href="#">Показать</a>
+          <a class="btn" href="#">Показать</a>
         </form>
       </aside>
       <section class="result">
@@ -156,8 +156,8 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <div class="container">
+    <div class="footer container">
+      <footer>
         <div class="footer-user clearfix">
           <h1>
             <span class="visually-hidden">Девайс</span>
@@ -188,7 +188,7 @@
         <section class="footer-copyright">
           <a href="https://htmlacademy.ru">HTML Academy</a><!-- спрайт -->
         </section>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

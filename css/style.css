@@ -7,6 +7,12 @@ body {
   color: #464646;
 }
 
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .clearfix::after {
   content: "";
 
@@ -28,28 +34,33 @@ body {
   text-transform: uppercase;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 /*HEADER*/
 
 header {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.main-header {
+  position: relative;
+
   margin-top: 40px;
   margin-bottom: 100px;
-  padding: 50px 51px 143px;
+  padding-top: 50px;
+  padding-bottom: 143px;
 
   background-color: #f7e296;
 }
 
-.inner-page header {
+.inner-page .main-header {
+  margin-bottom: 33px;
   padding-bottom: 30px;
-  margin-bottom: 44px;
 }
 
-header h1 {
-  margin-top: -68px;
+.main-header h1 {
+  position: absolute;
+  top: -38px;
 }
 
 .visually-hidden {
@@ -177,7 +188,7 @@ a .logo-header:active {
 .catalog-navigation {
   position: absolute;
   top: 30px;
-  left: -51px;
+  left: -60px;
   z-index: 3;
 
   display: none;
@@ -216,6 +227,11 @@ a .logo-header:active {
 }
 
 /*ITEM-SLIDER*/
+
+.index {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 main > input[name="services"],
 main > input[name="item"] {
@@ -412,9 +428,9 @@ h2 {
 }
 
 .services-slider {
-  width: 1397px;
+  width: 1400px;
   margin-bottom: 83px;
-  margin-left: -95.5px;
+  margin-left: -120px;
 
   font-size: 0;
 
@@ -566,6 +582,146 @@ h2 {
   padding-bottom: 46px;
 }
 
+/*INNER-HEADER*/
+
+.inner-header h2 {
+  margin-bottom: 14px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 20px;
+
+  vertical-align: top;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  display: inline-block;
+  width: 3.5px;
+  height: 3.5px;
+  margin-bottom: 1px;
+  margin-left: 16px;
+
+  border: 2px solid black;
+  border-bottom: transparent;
+  border-left: transparent;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+/*ASIDE*/
+
+aside {
+  float: left;
+  width: 288px;
+  padding-bottom: 530px;
+  padding-left: 180px;
+
+  background: url(../img/background-aside.png) repeat;
+}
+
+.search-title {
+  margin-bottom: 70px;
+  margin-left: -180px;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  padding-left: 180px;
+
+  font-weight: bold;
+  font-size: 1.1428em;
+  line-height: 1.2;
+  font-family: "Gilroy";
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #dcdcdc;
+}
+
+form .title {
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 1.2857em;
+  line-height: 1.2;
+  font-family: "Gilroy";
+  color: #000000;
+}
+
+.search-price {
+  width: 201px;
+}
+
+.title.search-range {
+  margin-bottom: 37px;
+}
+
+label {
+  line-height: 2.8571;
+  color: #000000;
+}
+
+.fieldset {
+  width: 77.5px;
+  padding-right: 123.5px;
+}
+
+.bluetooth-search {
+  margin-bottom: 51px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.result {
+  width: 932px;
+  float: right;
+}
+
 h3 {
   font-weight: bold;
   font-size: 1.2857em;
@@ -574,18 +730,20 @@ h3 {
   color: #000000;
 }
 
+
+
 /*FOOTER*/
 
-footer {
-  margin-top: 94px;
-
-  color: #ffffff;
-
+.footer.container {
   background-color: #464646;
 }
 
-footer .container {
+footer {
+  width: 1160px;
+  margin: 94px auto 0;
   padding-top: 66px;
+
+  color: #ffffff;
 }
 
 footer h1 {
