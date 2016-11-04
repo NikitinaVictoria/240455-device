@@ -15,38 +15,39 @@
             <text transform="translate(-2.32 34.511) scale(1.827 1.814)">DEVICE</text>
           </svg>
         </h1>
-        <form class="site-search" action="#" method="get">
-          <input name="search" type="text" placeholder="Поиск по сайту">
-          <button type="submit"></button>
-        </form>
-        <nav class="main-navigation">
+        <div class="header-user clearfix">
+          <form class="site-search" action="#" method="get">
+            <input name="search" type="text" placeholder="Поиск по сайту">
+            <button type="submit"></button>
+          </form>
           <ul class="user-navigation">
-            <li><a class="link-login" href="#login">Войти</a></li>
-            <li><a class="link-compare" href="#">Сравнить</a></li>
-            <li><a class="link-cart" href="#">Корзина</a></li>
+            <li><a class="header-login" href="#login">Войти</a></li>
+            <li><a class="header-compare" href="#">Сравнить</a></li>
+            <li><a class="header-cart" href="#">Корзина</a></li>
           </ul>
-          <ul class="site-navigation">
-            <li class="link-catalog"><a href="#">Каталог товаров</a>
-              <div class="catalog-navigation">
-                <ul class="list-1">
-                  <li><a href="#"><span class="capitalize">Виртуальная</span> реальность</a></li>
-                  <li><a href="catalog.html"><span class="capitalize">Моноподы</span> для селфи</a></li>
-                  <li><a href="#"><span class="capitalize">Экшн</span>-камеры</a></li>
-                </ul>
-                <ul class="list-2">
-                  <li><a href="#"><span class="capitalize">Фитнесс</span>-браслеты</a></li>
-                  <li><a href="#"><span class="capitalize">Умные</span> часы</a></li>
-                </ul>
-                <ul class="list-3">
-                  <li><a href="#"><span class="capitalize">Квадрокоптеры</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="link-delivery" ><a href="#">Доставка</a></li>
-            <li class="link-warranty"><a href="#">Гарантия</a></li>
-            <li class="link-contacts"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+        </div>
+        <ul class="site-navigation clearfix">
+          <li class="link-catalog">
+            <a>Каталог товаров</a>
+            <div class="catalog-navigation">
+              <ul class="list-1">
+                <li><a href="#"><span class="capitalize">Виртуальная</span> реальность</a></li>
+                <li><a href="catalog.html"><span class="capitalize">Моноподы</span> для селфи</a></li>
+                <li><a href="#"><span class="capitalize">Экшн</span>-камеры</a></li>
+              </ul>
+              <ul class="list-2">
+                <li><a href="#"><span class="capitalize">Фитнесс</span>-браслеты</a></li>
+                <li><a href="#"><span class="capitalize">Умные</span> часы</a></li>
+              </ul>
+              <ul class="list-3">
+                <li><a href="#"><span class="capitalize">Квадрокоптеры</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="link-delivery" ><a href="#">Доставка</a></li>
+          <li class="link-warranty"><a href="#">Гарантия</a></li>
+          <li class="link-contacts"><a href="#">Контакты</a></li>
+        </ul>
       </header>
     </div>
     <main class="container clearfix">
@@ -179,26 +180,26 @@
     </main>
     <footer>
       <div class="container">
-        <h1>
-          <span class="visually-hidden">Девайс</span>
-          <svg class="logo logo-footer" xmlns="http://www.w3.org/2000/svg" width="164" height="38" viewBox="0 0 164 36">
-            <text transform="translate(-2.32 34.511) scale(1.827 1.814)">DEVICE</text>
-          </svg>
-        </h1>
-        <nav class="footer-navigation">
+        <div class="footer-user clearfix">
+          <h1>
+            <span class="visually-hidden">Девайс</span>
+            <svg class="logo logo-footer" xmlns="http://www.w3.org/2000/svg" width="164" height="38" viewBox="0 0 164 36">
+              <text transform="translate(-2.32 34.511) scale(1.827 1.814)">DEVICE</text>
+            </svg>
+          </h1>
           <ul class="footer-user-navigation">
-            <li><a class="login-link" href="#login">Войти</a></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li><a class="footer-login" href="#login">Войти</a></li>
+            <li><a class="footer-compare" href="#">Сравнить</a></li>
+            <li><a class="footer-cart" href="#">Корзина</a></li>
           </ul>
-          <ul class="footer-site-navigation">
-            <li>г. Москва, ул. Строителей, 15</li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li>Тел.: +7 (495) 495-95-95</li>
-          </ul>
-        </nav>
+        </div>
+        <ul class="footer-site-navigation clearfix">
+          <li class="address">г. Москва, ул. Строителей, 15</li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li class="phone">Тел.: +7 (495) 495-95-95</li>
+        </ul>
         <section class="footer-social">
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a> <!-- спрайт -->
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a> <!-- спрайт -->
