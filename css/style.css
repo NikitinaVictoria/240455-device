@@ -260,6 +260,7 @@ h2 {
   line-height: 1.2;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
+  margin: 0;
 }
 
 .item-slide h2 {
@@ -459,7 +460,6 @@ h2 {
 }
 
 .services-slide h2 {
-  margin: 0;
   margin-bottom: 40px;
 
   font-size: 47px;
@@ -496,24 +496,40 @@ h2 {
   margin-right: 0;
 }
 
+/*INFO*/
+
+.info {
+  width: 50%;
+  padding-top: 41px;
+}
+
+.info h2 {
+  margin-bottom: 42px;
+}
+
+.info p {
+  width: 465px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.info a {
+  display: inline-block;
+  width: 260px;
+
+  background-color: #f0c52e;
+}
+
 /*ABOUT*/
 
 .about {
   float: left;
-  width: 50%;
   margin-bottom: 85px;
-  padding-top: 41px;
 }
 
 .about h2 {
-  margin: 0;
   margin-bottom: 42px;
-}
-
-.about p {
-  width: 465px;
-  margin: 0;
-  margin-bottom: 30px;
 }
 
 .about ul {
@@ -527,22 +543,19 @@ h2 {
   color: #000000;
 }
 
-.about a {
-  display: inline-block;
-  width: 260px;
-
-  background-color: #f0c52e;
-}
-
 /*CONTACTS*/
 
 .contacts {
   float: right;
-  width: 50%;
-  background-color: yellow;
 }
 
+.contacts p {
+  margin-bottom: 37px;
+}
 
+.contacts div {
+  padding-bottom: 67px;
+}
 
 
 
