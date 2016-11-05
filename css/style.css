@@ -7,7 +7,6 @@ body {
   color: #464646;
 }
 
-
 .container {
   width: 1400px;
   margin: 0 auto;
@@ -699,6 +698,7 @@ label {
   float: right;
   width: 860px;
   padding-left: 72px;
+  margin-bottom: 44px;
 }
 
 .sorting {
@@ -706,6 +706,7 @@ label {
   padding-left: 72px;
 
   background: url(../img/background-aside.png) repeat;
+  margin-bottom: 70px;
 }
 
 .sorting span {
@@ -754,9 +755,57 @@ label {
   text-transform: lowercase;
 }
 
+.item-card {
+  float: left;
+  position: relative;
+  margin-bottom: 86px;
+}
 
+.item-card:nth-of-type(2n) {
+  margin-left: 40px;
+}
+
+.action {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 360px;
+  height: 379px;
+}
+
+.action button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.action-btn {
+  margin-top: 182px;
+  margin-bottom: 32px;
+}
+
+.action-compare {
+  font-size: 13px;
+  line-height: 2.769;
+  color: rgba(0, 0, 0, 0.502);
+}
+
+.item-card:hover img {
+  opacity: 0.7;
+}
+
+.item-card:hover .action {
+  display: block;
+}
 
 h3 {
+  float: left;
+  margin: 0;
+  margin-top: 37px;
+
   font-weight: bold;
   font-size: 1.2857em;
   line-height: 1.2;
@@ -764,7 +813,73 @@ h3 {
   color: #000000;
 }
 
+.price {
+  float: right;
+  margin-top: 33px;
+}
 
+.paginator {
+  clear: both;
+  width: 708px;
+  margin: 0;
+  margin-top: 44px;
+  padding: 0;
+  padding: 26px;
+
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+
+  background-color: #ebebeb;
+}
+
+.paginator li {
+  display: inline-block;
+}
+
+.paginator a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Gilroy";
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.paginator-number {
+  margin-right: 25px;
+}
+
+.paginator-back {
+  float: left;
+}
+
+.paginator-forward {
+  float: right;
+}
+
+.new::after {
+  content: "NEW";
+  position: absolute;
+  top: 30px;
+  right: 27px;
+
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  padding-top: 24px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Gilroy", "Arial", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
 
 /*FOOTER*/
 
@@ -885,4 +1000,8 @@ a .logo-footer:hover {
 
 a .logo-footer:active {
   opacity: 0.3;
+}
+
+.inner-page footer {
+  margin-top: 0;
 }
