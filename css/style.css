@@ -689,38 +689,72 @@ label {
   color: #000000;
 }
 
-.fieldset {
-  width: 77.5px;
-  padding-right: 123.5px;
-}
-
 .bluetooth-search {
   margin-bottom: 51px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*RESULT*/
 
 .result {
-  width: 932px;
   float: right;
+  width: 860px;
+  padding-left: 72px;
 }
+
+.sorting {
+  margin-left: -72px;
+  padding-left: 72px;
+
+  background: url(../img/background-aside.png) repeat;
+}
+
+.sorting span {
+  font-weight: bold;
+  font-size: 1.1428em;
+  line-height: 1.2;
+  line-height: 75px;
+  font-family: "Gilroy";
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting-category {
+  display: inline-block;
+  margin: 0;
+  margin-top: -5px;
+  margin-left: 52px;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.sorting-category li {
+  display: inline-block;
+  margin-right: 30px;
+
+  vertical-align: top;
+}
+
+.sorting-category a {
+  font-size: 14px;
+}
+
+.sorting-top-down {
+  display: inline-block;
+  margin-left: 68px;
+
+  vertical-align: top;
+}
+
+.sorting-top-down span {
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+
 
 h3 {
   font-weight: bold;
