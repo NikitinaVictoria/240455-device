@@ -497,15 +497,15 @@ h2 {
   text-align: left;
 }
 
-/*TM*/
+/*PARTNERS*/
 
-.tm {
+.partners {
   margin-bottom: 93px;
 
   font-size: 0;
 }
 
-.tm a {
+.partners a {
   display: inline-block;
   width: 260px;
   height: 100px;
@@ -516,7 +516,7 @@ h2 {
   background-color: red;/*удалить*/
 }
 
-.tm a:nth-child(4n) {
+.partners a:nth-child(4n) {
   margin-right: 0;
 }
 
