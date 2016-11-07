@@ -7,8 +7,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header class="main-header">
+    <header class="main-header">
+      <div class="container">
         <h1>
           <span class="visually-hidden">Девайс</span>
           <svg class="logo logo-header" xmlns="http://www.w3.org/2000/svg" width="164" height="38" viewBox="0 0 164 36">
@@ -48,16 +48,16 @@
           <li class="link-warranty"><a href="#">Гарантия</a></li>
           <li class="link-contacts"><a href="#">Контакты</a></li>
         </ul>
-      </header>
-    </div>
-    <div class="container">
-      <main class=" index clearfix">
+      </div>
+    </header>
+    <main class="clearfix">
+      <input type="radio" id="btn-delivery" name="services" checked>
+      <input type="radio" id="btn-warranty" name="services">
+      <input type="radio" id="btn-credit" name="services">
+      <div class="container">
         <input type="radio" id="btn-monopode" name="item" checked>
         <input type="radio" id="btn-fittracker" name="item">
         <input type="radio" id="btn-quadrocopter" name="item">
-        <input type="radio" id="btn-delivery" name="services" checked>
-        <input type="radio" id="btn-warranty" name="services">
-        <input type="radio" id="btn-credit" name="services">
         <section class="item-slider">
           <article class="item-slide monopode" id="slide-monopod">
             <img src="img/monopode.png" width="384" height="486" alt="Монопод для селфи">
@@ -134,7 +134,9 @@
             <a class="item icon-quadrocopter" href="#">Квадрокоптеры</a>
           </li>
         </ul>
-        <section class="services-slider">
+      </div>
+      <section class="services-slider">
+        <div class="container">
           <div class="services-slider-controls">
             <label class="btn" for="btn-delivery">Доставка</label>
             <label class="btn" for="btn-warranty">Гарантия</label>
@@ -152,7 +154,9 @@
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
-        </section>
+        </div>
+      </section>
+      <div class="container">
         <section class="partners">
           <a class="partners-link partners-link-dji" href="#"></a>
           <a class="partners-link partners-link-spgadgets" href="#"></a>
@@ -177,11 +181,11 @@
             <img src="img/map.jpg" width="560" height="222" alt="Карта" />
           </div>
           <a class="write-link btn" href="#write">Напишите нам</a>
-      </section>
-      </main>
-    </div>
-    <div class="footer container">
-      <footer>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
         <div class="footer-user clearfix">
           <h1>
             <span class="visually-hidden">Девайс</span>
@@ -212,8 +216,8 @@
         <section class="footer-copyright">
           <a href="https://htmlacademy.ru">HTML Academy</a><!-- спрайт -->
         </section>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <form action="#" method="post">

@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 1400px;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -35,24 +35,19 @@ body {
 
 /*HEADER*/
 
-header {
-  width: 1040px;
-  margin: 0 auto;
-  padding: 0 60px;
-}
-
-.main-header {
+.main-header .container {
   position: relative;
 
   margin-top: 40px;
   margin-bottom: 100px;
   padding-top: 50px;
-  padding-bottom: 143px;
-
+  padding-bottom: 135px;
   background-color: #f7e296;
+  padding: 50px 60px 135px;
+  width: 1040px;
 }
 
-.inner-page .main-header {
+.inner-page .main-header .container {
   margin-bottom: 33px;
   padding-bottom: 30px;
 }
@@ -96,7 +91,7 @@ a .logo-header:active {
 
 .user-navigation {
   float: right;
-  width: 842px;
+  width: 830px;
   margin: 0;
   padding: 0;
 
@@ -227,13 +222,10 @@ a .logo-header:active {
 
 /*ITEM-SLIDER*/
 
-.index {
-  width: 1160px;
-  margin: 0 auto;
+main input[name="services"] {
+  display: none;
 }
-
-main > input[name="services"],
-main > input[name="item"] {
+.container input[name="item"] {
   display: none;
 }
 
@@ -427,9 +419,7 @@ h2 {
 }
 
 .services-slider {
-  width: 1400px;
   margin-bottom: 83px;
-  margin-left: -120px;
 
   font-size: 0;
 
@@ -462,7 +452,6 @@ h2 {
 .services-slider-controls {
   display: inline-block;
   margin-top: -30px;
-  margin-left: 95.5px;
   padding-bottom: 85px;
 
   vertical-align: top;
@@ -583,6 +572,15 @@ h2 {
 
 /*INNER-HEADER*/
 
+.inner-page main {
+  overflow: hidden;
+}
+
+.inner-header .container {
+  padding-left: 60px;
+  width: 1100px;
+}
+
 .inner-header h2 {
   margin-bottom: 14px;
 }
@@ -641,19 +639,18 @@ h2 {
 
 aside {
   float: left;
-  width: 288px;
-  padding-bottom: 530px;
-  padding-left: 180px;
+  width: calc(50% - 252px);
+  margin-bottom: -32767px;
+  padding-bottom: 32767px;
 
   background: url(../img/background-aside.png) repeat;
 }
 
 .search-title {
   margin-bottom: 70px;
-  margin-left: -180px;
   padding-top: 26px;
   padding-bottom: 30px;
-  padding-left: 180px;
+  padding-left: calc(100% - 268px);
 
   font-weight: bold;
   font-size: 1.1428em;
@@ -665,6 +662,10 @@ aside {
   background-color: #dcdcdc;
 }
 
+.aside-container {
+  margin-left: calc(100% - 268px);
+}
+
 form .title {
   margin-bottom: 30px;
 
@@ -673,10 +674,6 @@ form .title {
   line-height: 1.2;
   font-family: "Gilroy";
   color: #000000;
-}
-
-.search-price {
-  width: 201px;
 }
 
 .title.search-range {
@@ -695,18 +692,16 @@ label {
 /*RESULT*/
 
 .result {
-  float: right;
-  width: 860px;
-  padding-left: 72px;
+  float: left;
+  width: calc(252px + 50%);
   margin-bottom: 44px;
 }
 
 .sorting {
-  margin-left: -72px;
-  padding-left: 72px;
+  margin-bottom: 70px;
+  padding-left: 70px;
 
   background: url(../img/background-aside.png) repeat;
-  margin-bottom: 70px;
 }
 
 .sorting span {
@@ -750,14 +745,20 @@ label {
 }
 
 .sorting-top-down span {
-  font-size: 10px;
   font-weight: normal;
+  font-size: 10px;
   text-transform: lowercase;
 }
 
+.result-container {
+  width: 765px;
+  padding-left: 70px;
+}
+
 .item-card {
-  float: left;
   position: relative;
+
+  float: left;
   margin-bottom: 86px;
 }
 
@@ -777,9 +778,8 @@ label {
 
 .action button {
   display: block;
-  margin-left: auto;
   margin-right: auto;
-
+  margin-left: auto;
 }
 
 .action-btn {
@@ -883,16 +883,16 @@ h3 {
 
 /*FOOTER*/
 
-.footer.container {
-  background-color: #464646;
+.inner-page footer {
+  margin-top: 0;
 }
 
 footer {
-  width: 1160px;
-  margin: 94px auto 0;
-  padding-top: 66px;
-
+  background-color: #464646;
+  margin-top: 94px;
+  padding-top: 65px;
   color: #ffffff;
+
 }
 
 footer h1 {
