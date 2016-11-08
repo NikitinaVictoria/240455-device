@@ -66,7 +66,7 @@ body {
 .logo {
   font-weight: 800;
   font-size: 26.459px;
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .logo-header {
@@ -202,7 +202,7 @@ a .logo-header:active {
 .catalog-navigation a {
   font-weight: normal;
   font-size: 15px;
- font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   text-align: left;
   text-transform: lowercase;
 }
@@ -386,7 +386,7 @@ h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.2;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   text-align: left;
   color: #000000;
 }
@@ -458,7 +458,7 @@ h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -647,7 +647,7 @@ aside {
   font-weight: bold;
   font-size: 1.1428em;
   line-height: 1.2;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -664,7 +664,7 @@ form .title {
   font-weight: bold;
   font-size: 1.2857em;
   line-height: 1.2;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -700,7 +700,7 @@ label {
   font-weight: bold;
   font-size: 1.1428em;
   line-height: 75px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -832,7 +832,7 @@ h3 {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.2;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
