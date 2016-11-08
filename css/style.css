@@ -158,14 +158,6 @@ a .logo-header:active {
   padding-right: 28px;
 }
 
-.link-catalog > a::after {
-  content: "";
-
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
 .link-delivery {
   float: left;
   margin-right: 40px;
@@ -924,14 +916,6 @@ footer h1 {
   padding-left: 20px;
 
   font-size: 15px;
-}
-
-.footer-user-navigation a::before {
-  content: "";
-
-  display: inline-block;
-  width: 13px;
-  height: 12px;
 }
 
 .footer-site-navigation {
