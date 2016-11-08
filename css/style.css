@@ -39,7 +39,7 @@ body {
   position: relative;
 
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   padding-top: 50px;
   padding-bottom: 135px;
   background-color: #f7e296;
@@ -234,36 +234,26 @@ main input[name="services"] {
 .item-slider {
   position: relative;
 
-  width: 564px;
-  margin-bottom: 120px;
-  margin-left: 596px;
+  margin-top: -140px;
+  margin-bottom: 70px;
+  padding-right: 84px;
+  padding-left: 90px;
+}
 
-  text-align: left;
+.item-slide-right {
+  float: right;
 }
 
 .item-slider img {
-  position: absolute;
-  z-index: 2;
-}
-
-.monopode img {
-  top: -220px;
-  left: -506px;
-}
-
-.fittracker img {
-  top: -209px;
-  left: -481px;
+  float: left;
+  margin-top: 20px;
 }
 
 .quadrocopter img {
-  top: -155px;
-  left: -566px;
+  margin-left: -50px;
 }
 
 h2 {
-  margin: 0;
-
   font-weight: bold;
   font-size: 47px;
   line-height: 56.4px;
@@ -272,22 +262,17 @@ h2 {
 }
 
 .item-slide h2 {
-  position: absolute;
-  top: -141.7px;
-  left: 0;
-  z-index: 2;
-
   width: 390px;
+  margin-top: -87px;
+  margin-bottom: 40px;
 }
 
 .quadrocopter h2 {
   width: 502px;
 }
 
-.item-slide span {
-  position: absolute;
-  right: 46px;
-  z-index: 2;
+.item-number {
+  padding-left: 300px;
 
   font-weight: bold;
   font-size: 179.2px;
@@ -296,25 +281,9 @@ h2 {
   color: #ffffff;
 }
 
-.monopode span {
-  top: -234px;
-}
-
-.fittracker span {
-  top: -236px;
-}
-
-.quadrocopter span {
-  top: -234px;
-}
-
-.item-slide > p {
-  width: 445px;
+.description {
+  width: 479px;
   margin: 0;
-}
-
-.monopode > p {
-  width: 460px;
 }
 
 .item-slider a {
@@ -326,15 +295,15 @@ h2 {
 
 .item-slider-controls {
   position: relative;
-  bottom: 171px;
-  left: 263px;
+  bottom: 193px;
+  left: 750px;
 }
 
-.description {
+.characteristics {
   font-size: 0;
 }
 
-.description div {
+.characteristics div {
   display: inline-block;
   margin-right: 45px;
 
@@ -342,7 +311,7 @@ h2 {
   text-align: left;
 }
 
-.description b {
+.characteristics b {
   font-weight: lighter;
   font-size: 36px;
   line-height: 43.2px;
@@ -350,7 +319,7 @@ h2 {
   color: #000000;
 }
 
-.description p {
+.characteristics p {
   font-size: 13px;
   line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -957,16 +926,16 @@ footer h1 {
 
 .footer-social {
   display: inline-block;
-  width: 386.666px;
+  width: 386px;
   margin-bottom: 65px;
-  padding-left: 386.666px;
+  padding-left: 386px;
 
   text-align: center;
 }
 
 .footer-copyright {
   display: inline-block;
-  width: 386.666px;
+  width: 386px;
   margin-bottom: 65px;
   margin-left: -4px;
 
