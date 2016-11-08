@@ -643,7 +643,7 @@ aside {
   margin-bottom: -32767px;
   padding-bottom: 32767px;
 
-  background: url(../img/background-aside.png) repeat;
+  background-color: #eeeeee;
 }
 
 .search-title {
@@ -701,7 +701,7 @@ label {
   margin-bottom: 70px;
   padding-left: 70px;
 
-  background: url(../img/background-aside.png) repeat;
+  background-color: #ebebeb;
 }
 
 .sorting span {
