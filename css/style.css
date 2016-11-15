@@ -619,6 +619,7 @@ aside {
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 
   background-color: #dcdcdc;
 }
@@ -674,6 +675,7 @@ form .title {
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .sorting-category {
@@ -696,11 +698,25 @@ form .title {
 
 .sorting-category a {
   font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
 }
+
+.sorting-category a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-category a:active {
+  color: #000000;
+}
+
+.sorting-category a.active {
+    color: #000000;
+}
+
 
 .sorting-arrows {
   display: inline-block;
-  margin-left: 187px;
+  margin-left: 152px;
 
   font-size: 0;
   vertical-align: top;
