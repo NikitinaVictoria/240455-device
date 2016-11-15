@@ -698,17 +698,60 @@ form .title {
   font-size: 14px;
 }
 
-.sorting-top-down {
+.sorting-arrows {
   display: inline-block;
-  margin-left: 68px;
+  margin-left: 187px;
 
+  font-size: 0;
   vertical-align: top;
 }
 
-.sorting-top-down span {
-  font-weight: normal;
-  font-size: 10px;
-  text-transform: lowercase;
+.sorting-arrow {
+  margin-left: 26px;
+
+  font-size: 0;
+}
+
+.sorting-arrow::before {
+  content: "";
+
+  display: inline-block;
+
+  border: 9px solid rgba(0, 0, 0, 0.2);
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.sorting-arrow.top::before {
+  border-top-width: 0;
+}
+
+.sorting-arrow.down::before {
+  border-bottom-width: 0;
+}
+
+.sorting-arrow.top:hover::before {
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.sorting-arrow.down:hover::before {
+  border-top-color: rgba(0, 0, 0, 0.4);
+}
+
+.sorting-arrow.top:active::before {
+  border-bottom-color: #000000;
+}
+
+.sorting-arrow.down:active::before {
+  border-top-color: #000000;
+}
+
+.sorting-arrow.top.active::before {
+  border-bottom-color: #000000;
+}
+
+.sorting-arrow.down.active::before {
+  border-top-color: #000000;
 }
 
 .result-container {
