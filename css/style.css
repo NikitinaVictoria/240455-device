@@ -583,17 +583,19 @@ h2 {
 
 .breadcrumbs a {
   font-size: 14px;
-  color: #000000;
-
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumbs a:active {
-  opacity: 0.1;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs a.active {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 /*ASIDE*/
@@ -642,9 +644,63 @@ form .title {
   margin-bottom: 37px;
 }
 
-.aside-container label {
+.aside-container input {
+  display: none;
+}
+
+.aside-container input[type="checkbox"] + label {
+  position: relative;
+
+  display: block;
+  margin: 17px 0;
+  padding-left: 40px;
+
   line-height: 40px;
   color: #000000;
+
+  cursor: pointer;
+}
+
+.aside-container input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-color: #dbdbdb;
+  transform: translateY(-50%);
+}
+
+.aside-container input[type="checkbox"] + label:hover::before {
+  background-color: #cecece;
+}
+
+.aside-container input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-color: #dbdbdb;
+  background-image: url("../img/sprite.png");/*спрайт*/
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  /*+свойства icon-tick*/
+}
+
+.aside-container input[type="checkbox"] + label:hover::after {
+  background-color: #cecece;
+}
+
+.aside-container input[type="checkbox"] + label:active::after {
+  background-image: none;
+  background-color: #c4c4c4;
 }
 
 .bluetooth-search {
@@ -840,11 +896,9 @@ h3 {
 
 .paginator {
   clear: both;
-  width: 708px;
-  margin: 0;
+  width: 760px;
   margin-top: 44px;
   padding: 0;
-  padding: 26px;
 
   list-style: none;
   font-size: 0;
@@ -860,22 +914,56 @@ h3 {
 .paginator a {
   font-weight: bold;
   font-size: 16px;
-  line-height: 19.2px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .paginator-number {
   margin-right: 25px;
 }
 
-.paginator-back {
+.paginator-number a {
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 70px;
+}
+
+.paginator-number a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator-number a:active {
+  color: #000000;
+}
+
+.paginator-number a.active {
+  color: #000000;
+}
+
+.paginator-guides.previous {
   float: left;
 }
 
-.paginator-forward {
+.paginator-guides.next {
   float: right;
+}
+
+.paginator-guides {
+  width: 126px;
+}
+
+.paginator-guides a {
+  vertical-align: middle;
+  line-height: 70px;
+}
+
+.paginator-guides:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.paginator-guides a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .new::after {
