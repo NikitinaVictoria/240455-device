@@ -18,7 +18,7 @@
         <div class="header-user clearfix">
           <form class="site-search" action="#" method="get">
             <input name="search" type="text" placeholder="Поиск по сайту">
-            <button type="submit"></button>
+            <button type="submit">Найти</button>
           </form>
           <ul class="user-navigation">
             <li><a class="header-login" href="#login">Войти</a></li>
@@ -55,10 +55,13 @@
       <input type="radio" id="btn-warranty" name="services">
       <input type="radio" id="btn-credit" name="services">
       <div class="container">
-        <input type="radio" id="btn-monopode" name="item" checked>
-        <input type="radio" id="btn-fittracker" name="item">
-        <input type="radio" id="btn-quadrocopter" name="item">
         <section class="item-slider">
+          <input type="radio" id="btn-monopode" name="item" checked>
+          <label for="btn-monopode">монопод</label>
+          <input type="radio" id="btn-fittracker" name="item">
+          <label for="btn-fittracker">браслет</label>
+          <input type="radio" id="btn-quadrocopter" name="item">
+          <label for="btn-quadrocopter">квадрокоптер</label>
           <article class="item-slide monopode clearfix" id="slide-monopod">
             <img src="img/monopode.png" width="384" height="486" alt="Монопод для селфи">
             <div class="item-slide-right">
@@ -114,11 +117,6 @@
               </div>
             </div>
           </article>
-          <div class="item-slider-controls">
-            <label for="btn-monopode">монопод</label>
-            <label for="btn-fittracker">браслет</label>
-            <label for="btn-quadrocopter">квадрокоптер</label>
-          </div>
         </section>
         <ul class="item-navigation">
           <li>
