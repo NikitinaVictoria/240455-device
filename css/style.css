@@ -34,9 +34,19 @@ body {
   text-transform: uppercase;
   background: url("../img/btn-background.png") no-repeat center;
   background-size: auto 8px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.01em;
 
 }
+
+.btn:hover {
+  background-color: #f0c52e;
+  background-image: none;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 /*HEADER*/
 
@@ -326,6 +336,15 @@ main input[name="services"] {
   display: none;
 }
 
+.item-slider {
+  position: relative;
+
+  margin-top: -160px;
+  margin-bottom: 70px;
+  padding-right: 84px;
+  padding-left: 90px;
+}
+
 input[name="item"] {
   display: none;
 }
@@ -338,15 +357,6 @@ input[name="item"] {
 #btn-fittracker:checked ~  #slide-fittracker,
 #btn-quadrocopter:checked ~ #slide-quadrocopter {
   display: block;
-}
-
-.item-slider {
-  position: relative;
-
-  margin-top: -160px;
-  margin-bottom: 70px;
-  padding-right: 84px;
-  padding-left: 90px;
 }
 
 .item-slide-right {
@@ -417,6 +427,10 @@ input[name="item"] + label {
   margin-right: 23px;
 }
 
+input[name="item"]:not(:checked) + label:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
 input[name="item"]:not(:checked) + label {
   border-color: rgba(0, 0, 0, 0.3);
 }
@@ -452,7 +466,7 @@ input[name="item"]:not(:checked) + label {
 
 .item-navigation {
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 190px;
   padding: 0;
 
   list-style: none;
@@ -497,78 +511,115 @@ input[name="item"]:not(:checked) + label {
 
 /*SERVICES-SLIDER*/
 
-#btn-delivery:checked ~ .services-slider #slide-delivery,
-#btn-warranty:checked ~ .services-slider #slide-warranty,
-#btn-credit:checked ~ .services-slider #slide-credit {
-  display: inline-block;
-}
-
 .services-slider {
-  margin-bottom: 83px;
+  margin-bottom: 94px;
 
   font-size: 0;
 
   background-color: #e5e5e5;
 }
 
+
+#btn-delivery:checked ~ .services-slider #slide-delivery,
+#btn-warranty:checked ~ .services-slider #slide-warranty,
+#btn-credit:checked ~ .services-slider #slide-credit {
+  display: inline-block;
+}
+
 .services-slide {
   display: none;
-  width: 689px;
-  margin-top: -40px;
+  box-sizing: border-box;
+  margin-top: -100px;
+  margin-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 82px;
+  padding-left: 117px;
 
   background-repeat: no-repeat;
+  border-left: 7px solid #000000;
+}
+
+.services-slide h2 {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.001em;
+}
+
+.services-slide p {
+  width: 450px;
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 0.01em;
 }
 
 .delivery {
+  width: 807px;
+
   background-image: url("../img/delivery.png");
-  background-position: 553px 0;
+  background-position: right 85px;
 }
 
 .warranty {
+  width: 836px;
+
   background-image: url("../img/warranty.png");
-  background-position: 518px 0;
+  background-position: right 60px;
 }
 
 .credit {
+  width: 806px;
+
   background-image: url("../img/credit.png");
-  background-position: 533px 0;
+  background-position: right 60px;
 }
 
 .services-slider-controls {
   display: inline-block;
-  margin-top: -30px;
-  padding-bottom: 85px;
+  margin-top: -100px;
+  padding-top: 80px;
+  padding-bottom: 82px;
 
   vertical-align: top;
 }
 
+#btn-delivery:checked ~ .services-slider #label-delivery,
+#btn-warranty:checked ~ .services-slider #label-warranty,
+#btn-credit:checked ~ .services-slider #label-credit {
+  color: #f7e184;
+
+  background: #000000 none;
+}
+
 .services-slider-controls label {
   display: block;
-  width: 138px;
+  box-sizing: border-box;
+  width: 278px;
   margin-bottom: 25px;
-  padding-right: 140px;
+  padding-right: 107px;
 
-  font-weight: bold;
-  font-size: 18px;
   line-height: 40px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-position: left;
+  background-size: 160px 8px;
 }
 
-.services-slide h2 {
-  margin-bottom: 40px;
-
-  font-size: 47px;
+.services-slider-controls label:last-of-type {
+  margin-bottom: 0;
 }
 
-.services-slide p {
-  width: 440px;
-  padding-bottom: 85px;
+.services-slider-controls label:hover {
+  color: rgba(0, 0, 0, 1);
+}
 
-  font-size: 15px;
-  text-align: left;
+.services-slider-controls label:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 /*PARTNERS*/
@@ -577,6 +628,7 @@ input[name="item"]:not(:checked) + label {
   margin-bottom: 93px;
 
   font-size: 0;
+  letter-spacing: 0;
 }
 
 .partners a {
@@ -1097,14 +1149,14 @@ form .title {
   height: 40px;
 }
 
-.action-cart:hover {
+/*.action-cart:hover {
   background-color: #f0c52e;
   background-image: none;
 }
 
 .action-cart:active {
   color: rgba(0, 0, 0, 0.3);
-}
+}*/
 
 .action-compare {
   font-size: 13px;
