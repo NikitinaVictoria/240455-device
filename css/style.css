@@ -207,6 +207,14 @@ input[name="search"] + button:active {
 
   font-size: 15px;
 }
+
+.user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 /*
 .user-navigation a::before {
   content: "";
@@ -408,7 +416,8 @@ h2 {
 .item-slider a {
   display: block;
   width: 220px;
-  margin-top: 65px;
+  line-height: 40px;
+  margin-top: 60px;
   margin-bottom: 65px;
 }
 
@@ -931,8 +940,16 @@ form .title {
 }
 
 .aside-container a {
-  letter-spacing: 0.2em;
   padding: 0 40px;
+}
+
+.aside-container a:hover {
+  background-color: transparent;
+  background: url("../img/btn-background.png") no-repeat center;
+}
+
+.aside-container a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .aside-container input[type="radio"] + label::before {
@@ -1311,13 +1328,25 @@ footer {
   background-color: #464646;
   margin-top: 87px;
   padding-top: 65px;
+  padding-bottom: 64px;
   color: #ffffff;
-
 }
 
 footer h1 {
   float: left;
   margin: 0;
+}
+
+.logo-footer {
+  fill: #f7e184;
+}
+
+a .logo-footer:hover {
+  fill: #f0c52e;
+}
+
+a .logo-footer:active {
+  opacity: 0.3;
 }
 
 .footer-user.clearfix {
@@ -1345,6 +1374,15 @@ footer h1 {
   padding-left: 20px;
 
   font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-navigation a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-site-navigation {
@@ -1373,46 +1411,41 @@ footer h1 {
   line-height: 21.6px;
   font-family: "Gilroy", "Arial", sans-serif;
   vertical-align: text-top;
+  letter-spacing: 0.2em;
+}
+
+.footer-site-navigation a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .address {
   float: left;
+  letter-spacing: normal;
 }
 
 .phone {
   float: right;
+  letter-spacing: normal;
+}
+
+.decoration span {
+  float: left;
+  width: 80px;
+  height: 7px;
+
+  background-color: #f7e184;
+  margin: 10.5px 0;
 }
 
 .footer-social {
-  display: inline-block;
-  width: 386px;
-  margin-bottom: 65px;
-  padding-left: 386px;
-
-  text-align: center;
+  float: left;
+  margin-left: 426px;
 }
 
 .footer-copyright {
-  display: inline-block;
-  width: 386px;
-  margin-bottom: 65px;
-  margin-left: -4px;
-
-  text-align: right;
-}
-
-.logo-footer {
-  fill: #f7e184;
-}
-
-a .logo-footer:hover {
-  fill: #f0c52e;
-}
-
-a .logo-footer:active {
-  opacity: 0.3;
-}
-
-.inner-page footer {
-  margin-top: 0;
+  float: right;
 }
