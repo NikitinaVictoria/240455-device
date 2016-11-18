@@ -34,7 +34,7 @@ body {
   text-transform: uppercase;
   background: url("../img/btn-background.png") no-repeat center;
   background-size: auto 8px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.2em;
 
 }
 
@@ -519,7 +519,6 @@ input[name="item"]:not(:checked) + label {
   background-color: #e5e5e5;
 }
 
-
 #btn-delivery:checked ~ .services-slider #slide-delivery,
 #btn-warranty:checked ~ .services-slider #slide-warranty,
 #btn-credit:checked ~ .services-slider #slide-credit {
@@ -588,14 +587,6 @@ input[name="item"]:not(:checked) + label {
   vertical-align: top;
 }
 
-#btn-delivery:checked ~ .services-slider #label-delivery,
-#btn-warranty:checked ~ .services-slider #label-warranty,
-#btn-credit:checked ~ .services-slider #label-credit {
-  color: #f7e184;
-
-  background: #000000 none;
-}
-
 .services-slider-controls label {
   display: block;
   box-sizing: border-box;
@@ -615,11 +606,18 @@ input[name="item"]:not(:checked) + label {
 }
 
 .services-slider-controls label:hover {
+  background: url("../img/services-controls-hover.png") no-repeat left;
+}
+.services-slider-controls label:active {
   color: rgba(0, 0, 0, 1);
 }
 
-.services-slider-controls label:active {
-  color: rgba(0, 0, 0, 1);
+#btn-delivery:checked ~ .services-slider #label-delivery,
+#btn-warranty:checked ~ .services-slider #label-warranty,
+#btn-credit:checked ~ .services-slider #label-credit {
+  color: #f7e184;
+
+  background: #000000 none;
 }
 
 /*PARTNERS*/
@@ -642,6 +640,7 @@ input[name="item"]:not(:checked) + label {
   background-color: red;/*удалить*/
 }
 
+
 .partners a:nth-child(4n) {
   margin-right: 0;
 }
@@ -650,11 +649,25 @@ input[name="item"]:not(:checked) + label {
 
 .info {
   width: 50%;
-  padding-top: 41px;
 }
 
 .info h2 {
+  position: relative;
+
+  margin: 0;
   margin-bottom: 42px;
+  padding-top: 48px;
+}
+
+.info h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .info p {
@@ -667,7 +680,17 @@ input[name="item"]:not(:checked) + label {
   display: inline-block;
   width: 260px;
 
-  background-color: #f0c52e;
+  background-size: 260px;
+}
+
+.info a:hover {
+  background-color: transparent;
+  background: url("../img/btn-background.png") no-repeat center;
+  background-size: 260px;
+}
+
+.info a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 /*ABOUT*/
@@ -676,16 +699,24 @@ input[name="item"]:not(:checked) + label {
   float: left;
 }
 
-.about h2 {
-  margin-bottom: 42px;
+.info p {
+  width: 470px;
 }
 
 .about ul {
+  margin: 0;
   margin-bottom: 62px;
-  padding-top: 40px;
+  margin-left: 18px;
+  padding: 0;
+  padding-top: 35px;
+
+  list-style-type: none;
+  list-style-image: url("../img/icon-list-marker.png");
 }
 
 .about li {
+  padding-left: 18px;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 40px;
@@ -704,7 +735,7 @@ input[name="item"]:not(:checked) + label {
 }
 
 .contacts div {
-  padding-bottom: 46px;
+  padding-bottom: 65px;
 }
 
 /*INNER-HEADER*/
@@ -1278,7 +1309,7 @@ form .title {
 
 footer {
   background-color: #464646;
-  margin-top: 94px;
+  margin-top: 87px;
   padding-top: 65px;
   color: #ffffff;
 
