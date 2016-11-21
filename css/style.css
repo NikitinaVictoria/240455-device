@@ -1002,16 +1002,6 @@ input[name="item"]:not(:checked) + label {
   background-size: 260px;
 }
 
-.info a:hover {
-  background: url("../img/btn-background.png") no-repeat center;
-  background-color: transparent;
-  background-size: 260px;
-}
-
-.info a:active {
-  color: rgba(0, 0, 0, 1);
-}
-
 /*ABOUT*/
 
 .about {
