@@ -238,10 +238,6 @@ input[name="search"] + button:hover {
   border: none;
 }
 
-input[name="search"] + button:hover::after {
-  display: none;
-}
-
 input[name="search"] + button:active {
   display: inline-block;
 
@@ -249,6 +245,7 @@ input[name="search"] + button:active {
 
   background-color: #000000;
   border: none;
+  outline: none;
 }
 
 .user-navigation {
