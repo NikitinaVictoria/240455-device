@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroyextrabold-webfont.eot');
+    src: local('Gilroy'), local('Gilroy-ExtraBold'),
+          url('fonts/gilroyextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+           url('../fonts/gilroyextrabold-webfont.woff') format('woff'),
+           url('../fonts/gilroyextrabold-webfont.ttf') format('truetype'),
+           url('../fonts/gilroyextrabold-webfont.svg#gilroyextrabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/gilroylight-webfont.eot');
+    src: local('Gilroy'), local('Gilroy-Regular'),
+          url('../fonts/gilroylight-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+           url('../fonts/gilroylight-webfont.woff') format('woff'),
+           url('../fonts/gilroylight-webfont.ttf') format('truetype'),
+           url('../fonts/fonts/gilroylight-webfont.svg#gilroylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src:local('Open Sans'), local('OpenSans-Light'),
+        url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src:local('Open Sans'), local('OpenSans-Regular'),
+        url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body {
   font-weight: normal;
@@ -21,7 +69,10 @@ body {
 }
 
 .capitalize {
+  font-size: 15px;
+  line-height: 36px;
   text-transform: capitalize;
+  letter-spacing: 0.01em;
 }
 
 .btn {
@@ -55,21 +106,20 @@ body {
   box-sizing: border-box;
   margin-top: 40px;
   margin-bottom: 10px;
-  padding: 50px 60px 135px;
-  padding-top: 50px;
-  padding-bottom: 135px;
+  padding: 41px 59px 160px;
 
   background-color: #f7e296;
 }
 
 .inner-page .main-header .container {
   margin-bottom: 33px;
-  padding-bottom: 30px;
+  padding-bottom: 47px;
 }
 
 .main-header h1 {
   position: absolute;
   top: -38px;
+  left: 51px;
 }
 
 .visually-hidden {
@@ -97,17 +147,21 @@ a .logo-header:active {
 }
 
 .header-user {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .site-search {
   float: left;
+  margin-left: 5px;
 }
 
 input[name="search"] {
+  height: 36px;
   padding-left: 35px;
 
+  font-size: 15px;
   color: #000000;
+  letter-spacing: 0.01em;
 
   background: url("../img/search.png") no-repeat left;
   background-color: transparent;
@@ -174,8 +228,6 @@ input[name="search"]:focus + button::after {
 }
 
 input[name="search"] + button:hover {
-  display: inline-block;
-
   color: #ffffff;
 
   background-color: #000000;
@@ -207,14 +259,13 @@ input[name="search"] + button:active {
 
 .user-navigation li {
   display: inline-block;
+  margin-top: 4px;
 
   vertical-align: top;
 }
 
 .user-navigation a {
   position: relative;
-
-  padding-left: 20px;
 
   font-size: 15px;
 }
@@ -238,7 +289,16 @@ input[name="search"] + button:active {
 }
 
 .header-login {
-  margin-right: 180px;
+  margin-right: 215px;
+  padding-left: 25px;
+}
+
+.profile-link {
+  padding-left: 25px;
+}
+
+.user-navigation button {
+  vertical-align: text-top;
 }
 
 .header-login::before,
@@ -249,6 +309,10 @@ input[name="search"] + button:active {
   background-position: -509px -104px;
 }
 
+.header-compare {
+  padding-left: 19px;
+}
+
 .header-compare::before {
   width: 10px;
   height: 10px;
@@ -257,7 +321,8 @@ input[name="search"] + button:active {
 }
 
 .header-cart {
-  margin-left: 41px;
+  margin-left: 40px;
+  padding-left: 21px;
 }
 
 .header-cart::before {
@@ -297,7 +362,7 @@ input[name="search"] + button:active {
   z-index: 3;
 
   float: left;
-  margin-right: 375px;
+  margin-right: 294px;
 
   text-align: left;
 }
@@ -323,7 +388,7 @@ input[name="search"] + button:active {
 
 .link-delivery {
   float: left;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .link-warranty {
@@ -332,18 +397,20 @@ input[name="search"] + button:active {
 
 .link-contacts {
   float: right;
+  margin-right: -2px;
 }
 
 .catalog-navigation {
   position: absolute;
-  top: 30px;
-  left: -60px;
+  top: 22px;
+  left: -59px;
   z-index: 3;
 
   display: none;
-  width: 1100px;
+  box-sizing: border-box;
+  width: 1160px;
   padding-top: 25px;
-  padding-bottom: 34px;
+  padding-bottom: 28px;
   padding-left: 60px;
 
   font-size: 0;
@@ -354,12 +421,23 @@ input[name="search"] + button:active {
 
 .catalog-navigation ul {
   display: inline-block;
-  width: 20%;
   margin: 0;
   padding: 0;
 
   list-style: none;
   vertical-align: top;
+}
+
+.list-1 {
+  width: 240px;
+}
+
+.list-2 {
+  width: 200px;
+}
+
+.list li {
+  padding: 0;
 }
 
 .catalog-navigation a {
@@ -368,6 +446,7 @@ input[name="search"] + button:active {
   line-height: 36px;
   text-align: left;
   text-transform: lowercase;
+  letter-spacing: 0.01em;
 }
 
 .link-catalog:hover .catalog-navigation,
@@ -375,17 +454,13 @@ input[name="search"] + button:active {
   display: block;
 }
 
-.profile-link {
-  vertical-align: top;
-}
-
 .profile-link + button {
-  margin-right: 30px;
-  margin-left: 15px;
+  margin-right: 58px;
+  margin-left: 12px;
 
   font-size: 15px;
   line-height: 15px;
-  vertical-align: middle;
+  vertical-align: baseline;
   color: rgba(0, 0, 0, 0.3);
 
   background-color: transparent;
@@ -401,10 +476,19 @@ main input[name="services"] {
 .item-slider {
   position: relative;
 
-  margin-top: -160px;
-  margin-bottom: 70px;
-  padding-right: 84px;
-  padding-left: 90px;
+  margin-top: -162px;
+}
+
+.item-slider::before {
+  content: "";
+  position: absolute;
+  top: 77px;
+  left: 600px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
 }
 
 input[name="item"] {
@@ -423,15 +507,11 @@ input[name="item"] {
 
 .item-slide-right {
   float: right;
+  margin-right: 48px;
 }
 
 .item-slider img {
   float: left;
-  margin-top: 20px;
-}
-
-.quadrocopter img {
-  margin-left: -50px;
 }
 
 h2 {
@@ -443,18 +523,11 @@ h2 {
 }
 
 .item-slide h2 {
-  width: 390px;
   margin-top: -87px;
-  margin-bottom: 40px;
-}
-
-.quadrocopter h2 {
-  width: 502px;
+  margin-bottom: 20px;
 }
 
 .item-number {
-  padding-left: 300px;
-
   font-weight: bold;
   font-size: 179.2px;
   line-height: 179.2px;
@@ -463,29 +536,36 @@ h2 {
 }
 
 .description {
-  width: 479px;
+  width: 500px;
   margin: 0;
+  margin-bottom: 42px;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  color: #464646;
+  letter-spacing: 0.01em;
 }
 
 .item-slider a {
   display: block;
   width: 220px;
-  margin-top: 60px;
-  margin-bottom: 65px;
+  margin-bottom: 53px;
+  margin-left: 2px;
 
   line-height: 40px;
 }
 
 input[name="item"] + label {
   position: relative;
-  top: 396px;
-  left: 882px;
+  top: 365px;
+  left: 1000px;
 
   display: inline-block;
   box-sizing: border-box;
   width: 10px;
   height: 10px;
-  margin-right: 23px;
+  margin-right: 20px;
 
   font-size: 0;
 
@@ -507,13 +587,16 @@ input[name="item"]:not(:checked) + label {
 
 .characteristics div {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 80px;
 
   vertical-align: top;
   text-align: left;
 }
 
 .characteristics b {
+  display: inline-block;
+  padding-bottom: 9px;
+
   font-weight: lighter;
   font-size: 36px;
   line-height: 43.2px;
@@ -522,17 +605,84 @@ input[name="item"]:not(:checked) + label {
 }
 
 .characteristics p {
+  margin: 0;
+
   font-size: 13px;
   line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
 }
 
+.monopode {
+  padding-bottom: 106px;
+}
+
+.monopode img {
+  margin-top: 14px;
+  margin-left: 90px;
+}
+
+.monopode .item-number {
+  padding-left: 334px;
+}
+
+.monopode h2 {
+  width: 398px;
+}
+
+.fittracker {
+  margin-bottom: 96px;
+}
+
+.fittracker img {
+  margin-top: 24px;
+  margin-left: 115px;
+}
+
+.fittracker h2 {
+  width: 300px;
+}
+
+.fittracker .item-number {
+  padding-left: 310px;
+}
+
+.fittracker .description {
+  width: 465px;
+}
+
+.quadrocopter {
+  margin-bottom: 114px;
+}
+
+.quadrocopter img {
+  margin-top: 78px;
+  margin-left: 30px;
+}
+
+.quadrocopter .item-slide-right {
+  margin-right: 50px;
+}
+
+.quadrocopter h2 {
+  width: 510px;
+}
+
+.quadrocopter .characteristics div {
+  margin-right: 43px;
+}
+
+.quadrocopter .item-number {
+  width: 515px;
+
+  text-align: right;
+}
+
 /*ITEM-NAVIGATION*/
 
 .item-navigation {
   margin: 0;
-  margin-bottom: 190px;
+  margin-bottom: 185px;
   padding: 0;
 
   list-style: none;
@@ -557,11 +707,10 @@ input[name="item"]:not(:checked) + label {
   display: inline-block;
   width: 160px;
   height: 160px;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 
   vertical-align: top;
 
-  background-color: red;
   background-color: #f7e296;
 }
 
@@ -596,10 +745,17 @@ input[name="item"]:not(:checked) + label {
 }
 
 .icon-monopode::before {
+  top: 100%;
+
   width: 86px;
   height: 117px;
 
   background-position: -443px -256px;
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.icon-monopode + a {
+  width: 100px;
 }
 
 .icon-cam::before {
@@ -635,15 +791,14 @@ input[name="item"]:not(:checked) + label {
   background-color: #f0c52e;
 }
 
-.item-navigation li:active .item::before,
-.item-navigation li:active .item + a {
+.item-navigation li:active {
   opacity: 0.3;
 }
 
 /*SERVICES-SLIDER*/
 
 .services-slider {
-  margin-bottom: 94px;
+  margin-bottom: 103px;
 
   font-size: 0;
 
@@ -662,7 +817,7 @@ input[name="item"]:not(:checked) + label {
   margin-top: -100px;
   margin-bottom: 60px;
   padding-top: 70px;
-  padding-bottom: 82px;
+  padding-bottom: 76px;
   padding-left: 117px;
 
   background-repeat: no-repeat;
@@ -671,11 +826,11 @@ input[name="item"]:not(:checked) + label {
 
 .services-slide h2 {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   font-size: 47px;
   line-height: 56px;
-  letter-spacing: 0.001em;
+  letter-spacing: 0.01em;
 }
 
 .services-slide p {
@@ -689,7 +844,7 @@ input[name="item"]:not(:checked) + label {
 }
 
 .delivery {
-  width: 807px;
+  width: 817px;
 
   background-image: url("../img/delivery.png");
   background-position: right 85px;
@@ -703,7 +858,7 @@ input[name="item"]:not(:checked) + label {
 }
 
 .credit {
-  width: 806px;
+  width: 812px;
 
   background-image: url("../img/credit.png");
   background-position: right 60px;
@@ -721,7 +876,7 @@ input[name="item"]:not(:checked) + label {
 .services-slider-controls label {
   display: block;
   box-sizing: border-box;
-  width: 278px;
+  width: 277px;
   margin-bottom: 25px;
   padding-right: 107px;
 
@@ -816,7 +971,7 @@ input[name="item"]:not(:checked) + label {
   position: relative;
 
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   padding-top: 48px;
 }
 
@@ -832,9 +987,12 @@ input[name="item"]:not(:checked) + label {
 }
 
 .info p {
-  width: 465px;
   margin: 0;
   margin-bottom: 30px;
+
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0;
 }
 
 .info a {
@@ -860,8 +1018,8 @@ input[name="item"]:not(:checked) + label {
   float: left;
 }
 
-.info p {
-  width: 470px;
+.about p {
+  width: 495px;
 }
 
 .about ul {
@@ -873,6 +1031,7 @@ input[name="item"]:not(:checked) + label {
 
   list-style-type: none;
   list-style-image: url("../img/list-marker.png");
+  letter-spacing: 0;
 }
 
 .about li {
@@ -889,14 +1048,17 @@ input[name="item"]:not(:checked) + label {
 
 .contacts {
   float: right;
+  box-sizing: border-box;
+  padding-left: 20px;
 }
 
 .contacts p {
-  margin-bottom: 37px;
+  width: 540px;
+  margin-bottom: 38px;
 }
 
 .contacts div {
-  padding-bottom: 65px;
+  padding-bottom: 66px;
 }
 
 /*INNER-HEADER*/
@@ -911,12 +1073,15 @@ input[name="item"]:not(:checked) + label {
 }
 
 .inner-header h2 {
-  margin-bottom: 14px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 37px;
   padding: 0;
 
   list-style: none;
@@ -925,7 +1090,6 @@ input[name="item"]:not(:checked) + label {
 
 .breadcrumbs li {
   display: inline-block;
-  margin-right: 20px;
 
   vertical-align: top;
 }
@@ -936,8 +1100,9 @@ input[name="item"]:not(:checked) + label {
   display: inline-block;
   width: 3.5px;
   height: 3.5px;
-  margin-bottom: 1px;
-  margin-left: 16px;
+  margin-right: 17px;
+  margin-bottom: 3px;
+  margin-left: 10px;
 
   border: 2px solid black;
   border-bottom: transparent;
@@ -951,7 +1116,9 @@ input[name="item"]:not(:checked) + label {
 
 .breadcrumbs a {
   font-size: 14px;
+  line-height: 36px;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
 }
 
 .breadcrumbs a:hover {
@@ -978,9 +1145,9 @@ aside {
 }
 
 .search-title {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   padding-top: 26px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   padding-left: calc(100% - 268px);
 
   font-weight: bold;
@@ -1000,6 +1167,7 @@ aside {
 }
 
 form .title {
+  margin: 0;
   margin-bottom: 30px;
 
   font-weight: bold;
@@ -1010,6 +1178,9 @@ form .title {
 }
 
 .search-price {
+  min-height: 88px;/*УДАЛИТЬ*/
+  padding-top: 12px;
+
   border-top: 2px solid #000000;
 }
 
@@ -1017,7 +1188,15 @@ form .title {
   margin-bottom: 37px;
 }
 
+p.title {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
 .color-search {
+  padding-top: 12px;
+  padding-bottom: 33px;
+
   border-top: 2px solid #000000;
 }
 
@@ -1030,7 +1209,7 @@ form .title {
   position: relative;
 
   display: block;
-  margin: 17px 0;
+  margin: 0 0;
   padding-left: 40px;
 
   line-height: 40px;
@@ -1083,7 +1262,8 @@ form .title {
 }
 
 .bluetooth-search {
-  margin-bottom: 51px;
+  margin-bottom: 38px;
+  padding-top: 12px;
 
   border-top: 2px solid #000000;
 }
@@ -1150,14 +1330,14 @@ form .title {
 .result {
   float: left;
   width: calc(252px + 50%);
-  margin-bottom: 44px;
+  margin-bottom: 74px;
 }
 
 .sorting {
-  margin-bottom: 70px;
-  padding-top: 19px;
-  padding-bottom: 23px;
-  padding-left: 70px;
+  margin-bottom: 17px;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  padding-left: 72px;
 
   background-color: #ebebeb;
 }
@@ -1185,7 +1365,7 @@ form .title {
 
 .sorting-category li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 28px;
 
   vertical-align: top;
 }
@@ -1207,9 +1387,9 @@ form .title {
   color: #000000;
 }
 
-
 .sorting-arrows {
   display: inline-block;
+  margin-top: 5px;
   margin-left: 152px;
 
   font-size: 0;
@@ -1217,7 +1397,7 @@ form .title {
 }
 
 .sorting-arrow {
-  margin-left: 26px;
+  margin-left: 25px;
 
   font-size: 0;
 }
@@ -1266,14 +1446,14 @@ form .title {
 
 .result-container {
   width: 765px;
-  padding-left: 70px;
+  padding-left: 72px;
 }
 
 .item-card {
   position: relative;
 
   float: left;
-  margin-bottom: 86px;
+  margin-top: 50px;
 }
 
 .item-card:nth-of-type(2n) {
@@ -1284,13 +1464,14 @@ form .title {
   float: left;
   width: 255px;
   margin: 0;
-  margin-top: 37px;
+  margin-top: 24px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 21.6px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
+  letter-spacing: 0.01em;
 }
 
 .monopode-pro h3 {
@@ -1299,12 +1480,13 @@ form .title {
 
 .price {
   float: right;
-  margin-top: 38px;
+  margin-top: 24px;
 
   font-size: 16px;
   line-height: 19px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.01em;
 }
-
 
 .item-card:hover img {
   opacity: 0.7;
@@ -1314,8 +1496,8 @@ form .title {
   position: absolute;
   top: 0;
   left: 0;
-
   display: none;
+
   width: 360px;
   height: 379px;
 }
@@ -1332,8 +1514,8 @@ form .title {
 
 .action-cart {
   height: 40px;
-  margin-top: 182px;
-  margin-bottom: 32px;
+  margin-top: 170px;
+  margin-bottom: 7px;
   padding: 0 38px;
 
   letter-spacing: 0.2em;
@@ -1344,6 +1526,7 @@ form .title {
 .action-compare {
   font-size: 13px;
   line-height: 36px;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.01em;
 
@@ -1360,9 +1543,8 @@ form .title {
 }
 
 .paginator {
-  clear: both;
   width: 760px;
-  margin-top: 44px;
+  margin-top: 40px;
   padding: 0;
 
   list-style: none;
@@ -1372,8 +1554,13 @@ form .title {
   background-color: #ebebeb;
 }
 
-.paginator li {
+.paginator-number {
   display: inline-block;
+  margin-right: 25px;
+}
+
+.paginator li:nth-child(4) {
+  margin-right: 0;
 }
 
 .paginator a {
@@ -1383,10 +1570,6 @@ form .title {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-}
-
-.paginator-number {
-  margin-right: 25px;
 }
 
 .paginator-number a {
@@ -1438,9 +1621,9 @@ form .title {
   right: 27px;
 
   display: inline-block;
-  width: 60px;
-  height: 36px;
-  padding-top: 24px;
+  width: 56px;
+  height: 34px;
+  padding-top: 20px;
 
   font-weight: bold;
   font-size: 14px;
@@ -1462,7 +1645,7 @@ form .title {
 
 footer {
   margin-top: 87px;
-  padding-top: 65px;
+  padding-top: 63px;
   padding-bottom: 64px;
 
   color: #ffffff;
@@ -1473,6 +1656,7 @@ footer {
 footer h1 {
   float: left;
   margin: 0;
+  margin-left: -8px;
 }
 
 .logo-footer {
@@ -1488,7 +1672,7 @@ a .logo-footer:active {
 }
 
 .footer-user.clearfix {
-  margin-bottom: 14px;
+  margin-bottom: 29px;
 }
 
 .footer-user-navigation {
@@ -1503,15 +1687,17 @@ a .logo-footer:active {
 
 .footer-user-navigation li {
   display: inline-block;
-  margin-left: 43px;
+  margin-left: 40px;
 
   vertical-align: top;
 }
 
+.footer-user-navigation li:first-of-type {
+  margin-left: 0;
+}
+
 .footer-user-navigation a {
   position: relative;
-
-  padding-left: 20px;
 
   font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
@@ -1535,6 +1721,10 @@ a .logo-footer:active {
   transform: translateY(-50%);
 }
 
+.footer-login {
+  padding-left: 25px;
+}
+
 .footer-login::before {
   width: 13px;
   height: 12px;
@@ -1549,6 +1739,10 @@ a .logo-footer:active {
   background-position: -414px -104px;
 }
 
+.footer-compare {
+  padding-left: 18px;
+}
+
 .footer-compare::before {
   width: 10px;
   height: 10px;
@@ -1561,6 +1755,10 @@ a .logo-footer:active {
   height: 10px;
 
   background-position: -567px -74px;
+}
+
+.footer-cart {
+  padding-left: 21px;
 }
 
 .footer-cart::before {
@@ -1579,7 +1777,7 @@ a .logo-footer:active {
 
 .footer-site-navigation {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 0;
 
   list-style: none;
@@ -1603,6 +1801,7 @@ a .logo-footer:active {
   line-height: 21.6px;
   font-family: "Gilroy", "Arial", sans-serif;
   vertical-align: text-top;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
@@ -1616,21 +1815,24 @@ a .logo-footer:active {
 
 .address {
   float: left;
+  margin-top: -3px;
 
   letter-spacing: normal;
 }
 
 .phone {
   float: right;
+  margin-top: -3px;
 
   letter-spacing: normal;
 }
 
 .decoration span {
   float: left;
+  box-sizing: border-box;
   width: 80px;
   height: 7px;
-  margin: 10.5px 0;
+  margin: 15.5px 0;
 
   background-color: #f7e184;
 }
@@ -1684,6 +1886,7 @@ a .logo-footer:active {
 .footer-copyright a:active {
   opacity: 0.3;
 }
+
 /*SPRITE*/
 
 .sprite {
