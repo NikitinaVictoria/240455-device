@@ -1317,6 +1317,10 @@ p.title {
   border: 2px solid #bcbcbc;
 }
 
+input[type="radio"]:not(:checked):active ~ input[type="radio"]:checked + label::after {
+  border: 2px solid #acacac;
+}
+
 /*RESULT*/
 
 .result {
