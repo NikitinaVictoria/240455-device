@@ -192,6 +192,10 @@ input[name="search"]:hover:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
+input[name="search"]:focus {
+  outline: none;
+}
+
 .site-search button {
   position: relative;
 
