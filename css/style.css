@@ -465,6 +465,7 @@ input[name="search"] + button:active {
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 /*ITEM-SLIDER*/
