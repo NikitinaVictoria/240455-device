@@ -1313,6 +1313,9 @@ textarea + button {
   border: none;
 }
 
+.modal-content-show {
+  display: block;
+}
 /*INNER-HEADER*/
 
 .inner-page main {

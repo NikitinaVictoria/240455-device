@@ -187,11 +187,11 @@
         <section class="info contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map" id="map">
+          <div class="map">
             <img src="img/map.jpg" width="560" height="222" alt="Карта" />
           </div>
           <div class="modal-content-map">
-            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <button class="modal-content-close map-close" type="button" title="Закрыть">Закрыть</button>
           </div>
           <a class="write-link btn" href="#write">Напишите нам</a>
         </section>
@@ -230,7 +230,7 @@
       </div>
     </footer>
     <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <button class="modal-content-close write-us-close" type="button" title="Закрыть">Закрыть</button>
       <form action="#" method="post">
         <div class="name-block">
           <label for="name-field">Ваше имя:</label>
@@ -245,5 +245,73 @@
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
+    <script>
+// ПЕРЕМЕННЫЕ
+      var WriteUsLink = document.querySelector(".write-link");
+      var WriteUsPopup = document.querySelector(".modal-content");
+      var WriteUsClose = document.querySelector(".write-us-close");
+      var Name = WriteUsPopup.querySelector("[name=name]");
+      var form = WriteUsPopup.querySelector("form");
+      var Email = WriteUsPopup.querySelector("[name=email]");
+      var Letter = WriteUsPopup.querySelector("[name=letter]");
+      var storageName = localStorage.getItem("Name");
+      var storageEmail = localStorage.getItem("Email");
+
+
+        WriteUsLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        WriteUsPopup.classList.add("modal-content-show");
+
+
+        Name.focus();
+        if (storageName) {
+          Name.value = storageName;
+
+        }
+      });
+
+// ПРОВЕРКА ЗАПОЛНЕНИЯ ПОЛЯ
+
+        form.addEventListener("submit", function(event) {
+          if (!Name.value || !Email.value || !Letter.value) {
+          event.preventDefault();
+          console.log("Нужно ввести данные!");
+        } else {
+          localStorage.setItem("Name", Name.value);
+        }
+          ;})
+
+
+
+// ЗАКРЫТИЕ ФОРМЫ
+
+        WriteUsClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        WriteUsPopup.classList.remove("modal-content-show");
+      });
+
+
+
+// ОТКРЫТИЕ КАРТЫ
+
+      var MapLink = document.querySelector(".map");
+      var MapPopup = document.querySelector(".modal-content-map");
+          MapLink .addEventListener("click", function(event) {
+          event.preventDefault();
+          MapPopup.classList.add("modal-content-show");
+        });
+
+// ЗАКРЫТИЕ КАРТЫ
+
+      var MapClose = document.querySelector(".map-close");
+          MapClose.addEventListener("click", function(event) {
+          event.preventDefault();
+          MapPopup.classList.remove("modal-content-show");
+
+          });
+
+
+
+    </script>
   </body>
 </html>
