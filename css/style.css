@@ -1083,7 +1083,7 @@ input[name="item"]:not(:checked) + label {
   background: #ffffff url("../img/map-popup.jpg");
   box-shadow: 0 4px 50px -5px rgba(4, 6, 6, 0.75);
   transform: translateX(-50%);
-  /*display: none;*/
+  display: none;
 }
 
 /*MODAL-CONTENT*/
@@ -1102,7 +1102,7 @@ input[name="item"]:not(:checked) + label {
   background-color: #ffffff;
   transform: translateX(-50%);
   box-shadow: 0 4px 50px -5px rgba(4, 6, 6, 0.75);
-  /*display: none;*/
+  display: none;
 }
 
 .modal-content-close {
@@ -1411,15 +1411,83 @@ form .title {
   color: #000000;
 }
 
-.search-price {
-  min-height: 88px;/*УДАЛИТЬ*/
+.aside-container input {
+  display: none;
+}
+
+.range-filter {
+  min-height: 88px;
   padding-top: 12px;
 
   border-top: 2px solid #000000;
 }
 
-.title.search-range {
-  margin-bottom: 37px;
+.range-filter .title {
+  margin-bottom: 36px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #dbdbdb;
+
+}
+
+.range-controls .bar {
+  width: 110px;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+
+  background-color: #eeeeee;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 50%;
+  top: -6px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  left: 110px;
+}
+
+.price-control label {
+  display: inline-block;
+  margin-left: 89px;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 23px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  margin-top: 9px;
+  margin-bottom: 33px;
+}
+
+.price-control input {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 23px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  display: inline;
+  border: none;
+  background-color: transparent;
+  width: 80px;
 }
 
 p.title {
@@ -1432,10 +1500,6 @@ p.title {
   padding-bottom: 33px;
 
   border-top: 2px solid #000000;
-}
-
-.aside-container input {
-  display: none;
 }
 
 .aside-container input[type="checkbox"] + label,
