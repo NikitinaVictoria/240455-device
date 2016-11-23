@@ -194,8 +194,7 @@
             <button class="modal-content-close map-close" type="button" title="Закрыть">Закрыть</button>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.3297862547586!2d37.52931495323521!3d55.6870466686434
               26!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQ
-              uy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1479915740640"
-                width="960" height="559" frameborder="0" style="border:0" allowfullscreen>
+              uy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1479915740640" frameborder="0" style="border:0" allowfullscreen>
             </iframe>
           </div>
           <a class="write-link btn" href="#write">Напишите нам</a>
@@ -238,15 +237,15 @@
       <button class="modal-content-close write-us-close" type="button" title="Закрыть">Закрыть</button>
       <form action="#" method="post">
         <div class="name-block">
-          <label for="name-field" required>Ваше имя:</label>
-          <input id="write-us name-field" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          <label for="name-field">Ваше имя:</label>
+          <input id="name-field" type="text" name="name" placeholder="Представьтесь, пожалуйста"  required>
         </div>
-        <div class="email-block" required>
+        <div class="email-block">
           <label for="email-field">Ваш e-mail:</label>
-          <input id="write-us email-field" type="text" name="email" placeholder="Для отправки ответа">
+          <input id="email-field" type="text" name="email" placeholder="Для отправки ответа" required>>
         </div>
         <label for="letter-field" required>Текст письма:</label>
-        <textarea id="write-us letter-field" name="letter" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        <textarea id="letter-field" name="letter" rows="8" cols="80" placeholder="В свободной форме"></textarea>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>

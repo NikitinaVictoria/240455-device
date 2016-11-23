@@ -563,7 +563,7 @@ h2 {
 
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
   letter-spacing: 0.01em;
 }
@@ -1101,6 +1101,11 @@ input[name="item"]:not(:checked) + label {
 
 .modal-content-show {
   display: block;
+}
+
+iframe {
+  width: 960px;
+  height: 559px;
 }
 
 /*MODAL-CONTENT*/
@@ -1681,6 +1686,8 @@ input[name="bluetooth"]:checked + label:hover::after {
   padding-bottom: 19px;
   padding-left: 72px;
 
+  font-size: 0;
+
   background-color: #ebebeb;
 }
 
@@ -1703,6 +1710,7 @@ input[name="bluetooth"]:checked + label:hover::after {
   list-style: none;
   font-size: 0;
   vertical-align: middle;
+  font-size: 0;
 }
 
 .sorting-category li {
