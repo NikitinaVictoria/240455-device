@@ -284,8 +284,8 @@
         } else {
           localStorage.setItem("Name", Name.value);
           localStorage.setItem("Email", Email.value);
-        }
-          ;})
+        };
+      });
 
 
 
@@ -295,6 +295,12 @@
         event.preventDefault();
         WriteUsPopup.classList.remove("modal-content-show");
       });
+        window.addEventListener("keydown", function(event) {
+          if (event.keyCode === 27) {
+            WriteUsPopup.classList.remove("modal-content-show");
+
+          }
+        })
 
 
 
@@ -314,6 +320,11 @@
           event.preventDefault();
           MapPopup.classList.remove("modal-content-show");
 
+          });
+          window.addEventListener("keydown", function(event) {
+            if (event.keyCode === 27) {
+              MapPopup.classList.remove("modal-content-show");
+            }
           });
 
 
