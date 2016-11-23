@@ -261,12 +261,17 @@
         WriteUsLink.addEventListener("click", function(event) {
         event.preventDefault();
         WriteUsPopup.classList.add("modal-content-show");
-
-
-        Name.focus();
         if (storageName) {
           Name.value = storageName;
-
+          Email.focus();
+        } else {
+        Name.focus();
+        }
+        if (storageEmail) {
+          Email.value = storageEmail;
+          Letter.focus();
+        } else {
+        Email.focus();
         }
       });
 
