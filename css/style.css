@@ -652,8 +652,8 @@ input[name="item"]:not(:checked) + label {
 }
 
 .fittracker {
-  margin-bottom: 96px;
   margin-right: -4px;
+  margin-bottom: 96px;
 }
 
 .fittracker img {
@@ -674,8 +674,8 @@ input[name="item"]:not(:checked) + label {
 }
 
 .quadrocopter {
-  margin-bottom: 114px;
   margin-right: -5px;
+  margin-bottom: 114px;
 }
 
 .quadrocopter img {
@@ -1080,16 +1080,13 @@ input[name="item"]:not(:checked) + label {
   letter-spacing: 0;
 }
 
-
 .contacts .map {
   padding-bottom: 66px;
 }
 
 .modal-content-map {
   position: fixed;
-  top: 50%;
   top: 0;
-  left: 50%;
   left: 50%;
   z-index: 4;
 
@@ -1102,6 +1099,10 @@ input[name="item"]:not(:checked) + label {
   transform: translateX(-50%);
 }
 
+.modal-content-show {
+  display: block;
+}
+
 /*MODAL-CONTENT*/
 
 .modal-content {
@@ -1111,7 +1112,9 @@ input[name="item"]:not(:checked) + label {
   z-index: 4;
 
   display: none;
+  box-sizing: border-box;
   width: 960px;
+  padding-top: 98px;
   padding-left: 100px;
 
   font-size: 0;
@@ -1122,13 +1125,12 @@ input[name="item"]:not(:checked) + label {
 }
 
 .modal-content-close {
-  position: relative;
+  position: absolute;
+  top: 22px;
+  left: 870px;
 
   width: 55px;
   height: 55px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  margin-left: 870px;
 
   font-size: 0;
 
@@ -1313,9 +1315,26 @@ textarea + button {
   border: none;
 }
 
-.modal-content-show {
+.modal-content-appear {
   display: block;
+
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  animation-fill-mode: forwards;
 }
+
+@keyframes move {
+  0% {
+    transform: translateX(500px);
+  }
+
+  100% {
+    transform: translateX(-480px);
+  }
+}
+
 /*INNER-HEADER*/
 
 .inner-page main {
@@ -2160,11 +2179,11 @@ a .logo-footer:active {
   float: left;
   width: 203px;
   margin-top: -3px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
 
   font-weight: 100;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   letter-spacing: 0;
 }
 
