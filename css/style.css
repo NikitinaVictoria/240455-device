@@ -111,6 +111,7 @@ img {
   display: inline-block;
 
   text-indent: -9999px;
+  vertical-align: top;
 }
 
 .logo {
@@ -214,6 +215,7 @@ input[name="search"] + button::after {
 input[name="search"]:focus + button,
 input[name="search"]:focus + button::after {
   display: inline-block;
+  vertical-align: top;
 }
 
 input[name="search"] + button:hover {
@@ -231,6 +233,7 @@ input[name="search"] + button:active {
   background-color: #000000;
   border: none;
   outline: none;
+  vertical-align: top;
 }
 
 .user-navigation {
@@ -569,6 +572,7 @@ input[name="item"] + label {
 
   border: 3px solid #000000;
   border-radius: 50%;
+  vertical-align: top;
 }
 
 input[name="item"]:not(:checked) + label:hover {
@@ -589,6 +593,7 @@ input[name="item"]:not(:checked) + label {
 
   vertical-align: top;
   text-align: left;
+
 }
 
 .characteristics b {
@@ -600,6 +605,7 @@ input[name="item"]:not(:checked) + label {
   line-height: 43.2px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
+  vertical-align: top;
 }
 
 .characteristics p {
@@ -825,6 +831,7 @@ input[name="item"]:not(:checked) + label {
 #btn-warranty:checked ~ .services-slider #slide-warranty,
 #btn-credit:checked ~ .services-slider #slide-credit {
   display: inline-block;
+  vertical-align: top;
 }
 
 .services-slide {
@@ -1017,6 +1024,7 @@ input[name="item"]:not(:checked) + label {
   width: 260px;
 
   background-size: 260px;
+  vertical-align: top;
 }
 
 /*ABOUT*/
@@ -1209,6 +1217,7 @@ iframe {
 
   background-color: rgba(242, 242, 242, 0.5);
   border: none;
+  vertical-align: top;
 }
 
 .modal-content input:hover {
@@ -1403,6 +1412,7 @@ textarea + button {
   border-left: transparent;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  vertical-align: baseline;
 }
 
 .breadcrumbs li:last-child::after {
@@ -1539,6 +1549,7 @@ form .title {
   line-height: 23px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
+  vertical-align: top;
 }
 
 .price-control input {
@@ -1703,8 +1714,8 @@ input[name="bluetooth"]:checked + label:hover::after {
 
 .sorting {
   margin-bottom: 17px;
-  padding-top: 21px;
-  padding-bottom: 19px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   padding-left: 72px;
 
   font-size: 0;
@@ -1720,6 +1731,7 @@ input[name="bluetooth"]:checked + label:hover::after {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  vertical-align: middle;
 }
 
 .sorting-category {
@@ -1760,8 +1772,8 @@ input[name="bluetooth"]:checked + label:hover::after {
 
 .sorting-arrows {
   display: inline-block;
-  margin-top: 5px;
-  margin-left: 152px;
+  margin-top: 13px;
+  margin-left: 160px;
 
   font-size: 0;
   vertical-align: top;
@@ -1781,6 +1793,7 @@ input[name="bluetooth"]:checked + label:hover::after {
   border: 9px solid rgba(0, 0, 0, 0.2);
   border-right-color: transparent;
   border-left-color: transparent;
+  vertical-align: top;
 }
 
 .sorting-arrow.top::before {
@@ -1933,6 +1946,7 @@ input[name="bluetooth"]:checked + label:hover::after {
 .paginator-number {
   display: inline-block;
   margin-left: 25px;
+  vertical-align: top;
 }
 
 .paginator li:nth-child(2) {
@@ -2267,6 +2281,7 @@ a .logo-footer:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   opacity: 0.3;
+  vertical-align: top;
 }
 
 .social-btn:hover {
@@ -2291,6 +2306,7 @@ a .logo-footer:active {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -444px -42px;
+  vertical-align: top;
 }
 
 .footer-copyright a:hover {
