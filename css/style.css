@@ -3,10 +3,10 @@
     src: url('../fonts/gilroyextrabold-webfont.eot');
     src: local('gilroy'), local('gilroyextrabold'),
           url('../fonts/gilroyextrabold-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
-           url('../fonts/gilroyextrabold-webfont.woff') format('woff'),
-           url('../fonts/gilroyextrabold-webfont.ttf') format('truetype'),
-           url('../fonts/gilroyextrabold-webfont.svg#gilroyextrabold') format('svg');
+          url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+          url('../fonts/gilroyextrabold-webfont.woff') format('woff'),
+          url('../fonts/gilroyextrabold-webfont.ttf') format('truetype'),
+          url('../fonts/gilroyextrabold-webfont.svg#gilroyextrabold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
@@ -16,43 +16,18 @@
     src: url('../fonts/gilroylight-webfont.eot');
     src: local('gilroy'), local('gilroylight'),
           url('../fonts/gilroylight-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/gilroylight-webfont.woff2') format('woff2'),
-           url('../fonts/gilroylight-webfont.woff') format('woff'),
-           url('../fonts/gilroylight-webfont.ttf') format('truetype'),
-           url('../fonts/gilroylight-webfont.svg#gilroylight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans-light-webfont.eot');
-    src: local('opensans'), local('opensans-light'),
-          url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/opensans-light-webfont.woff2') format('woff2'),
-           url('../fonts/opensans-light-webfont.woff') format('woff'),
-           url('../fonts/opensans-light-webfont.ttf') format('truetype'),
-           url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans-regular-webfont.eot');
-    src: local('opensans'), local('opensans-light'),
-          url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-           url('../fonts/opensans-regular-webfont.woff') format('woff'),
-           url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
-           url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+          url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+          url('../fonts/gilroylight-webfont.woff') format('woff'),
+          url('../fonts/gilroylight-webfont.ttf') format('truetype'),
+          url('../fonts/gilroylight-webfont.svg#gilroylight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 html,
 body {
+  min-width: 1240px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 28px;
@@ -293,7 +268,8 @@ input[name="search"] + button:active {
   left: 0;
 
   background-image: url("../img/sprite.png");
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .user-navigation a:hover {
@@ -399,7 +375,8 @@ input[name="search"] + button:active {
   height: 16px;
 
   background: url("../img/sprite.png") no-repeat -570px -104px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .link-delivery {
@@ -717,33 +694,23 @@ input[name="item"]:not(:checked) + label {
   letter-spacing: 0;
 }
 
-.item-navigation li {
-  display: inline-block;
-  margin-right: 40px;
-
-  vertical-align: top;
-}
-
-.item-navigation li:nth-child(6n) {
-  margin-right: 0;
-}
-
-.item {
+.items {
   position: relative;
 
   display: inline-block;
   width: 160px;
-  height: 160px;
-  margin-bottom: 34px;
+  margin-right: 40px;
+  padding-top: 194px;
 
   vertical-align: top;
-
-  background-color: #f7e296;
 }
 
-.item-navigation a {
+.items:nth-child(6n) {
+  margin-right: 0;
+}
+
+.items a {
   display: block;
-  width: 160px;
 
   font-weight: bold;
   font-size: 18px;
@@ -754,72 +721,94 @@ input[name="item"]:not(:checked) + label {
   letter-spacing: 0.01em;
 }
 
-.item::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  background: #f7e296 url("../img/sprite.png") no-repeat;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.icon-vr::before {
-  width: 97px;
-  height: 55px;
-
-  background-position: -442px -428px;
-}
-
-.icon-monopode::before {
-  top: 100%;
-
-  width: 86px;
-  height: 117px;
-
-  background-position: -443px -256px;
-  transform: translateX(-50%) translateY(-100%);
-}
-
-.icon-monopode + a {
+.icon-monopode a {
   width: 100px;
 }
 
-.icon-cam::before {
-  width: 71px;
-  height: 87px;
+.items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  background-position: -10px -10px;
+  width: 160px;
+  height: 160px;
+
+  background-color: #f7e296;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-vr::before {
+  background-image: url("../img/nav-vr.png");
+}
+
+.icon-monopode::before {
+  background-image: url("../img/nav-monopode.png");
+  background-position: center bottom;
+}
+
+.icon-cam::before {
+  background-image: url("../img/nav-cam.png");
 }
 
 .icon-fittracker::before {
-  width: 107px;
-  height: 65px;
-
-  background-position: -440px -10px;
+  background-image: url("../img/nav-fittracker.png");
 }
 
 .icon-watch::before {
-  width: 56px;
-  height: 98px;
-
-  background-position: -559px -428px;
+  background-image: url("../img/nav-watch.png");
 }
 
 .icon-quadrocopter::before {
-  width: 132px;
-  height: 69px;
-
-  background-position: -10px -393px;
+  background-image: url("../img/nav-quadrocopter.png");
 }
 
-.items:hover .item,
-.items:hover .item::before {
+.items:hover::before {
   background-color: #f0c52e;
 }
 
-.items:active {
+.items:active a {
   opacity: 0.3;
+}
+
+.items:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-vr::after {
+  background-image: url("../img/nav-vr-act.png");
+}
+
+.icon-monopode:active::after {
+  background-image: url("../img/nav-monopode-act.png");
+  background-position: center bottom;
+}
+
+.icon-cam::after {
+  background-image: url("../img/nav-cam-act.png");
+}
+
+.icon-fittracker::after {
+  background-image: url("../img/nav-fittracker-act.png");
+}
+
+.icon-watch::after {
+  background-image: url("../img/nav-watch-act.png");
+}
+
+.icon-quadrocopter::after {
+  background-image: url("../img/nav-quadrocopter-act.png");
 }
 
 /*SERVICES-SLIDER*/
@@ -1096,7 +1085,8 @@ input[name="item"]:not(:checked) + label {
 
   background: #ffffff url("../img/map-popup.jpg");
   box-shadow: 0 4px 50px -5px rgba(4, 6, 6, 0.75);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .modal-content-show {
@@ -1126,7 +1116,8 @@ iframe {
 
   background-color: #ffffff;
   box-shadow: 0 4px 50px -5px rgba(4, 6, 6, 0.75);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .modal-content-close {
@@ -1170,13 +1161,16 @@ iframe {
 }
 
 .modal-content-close::before {
-  transform: translateX(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
 }
 
 .modal-content-close::after {
   top: 49%;
 
-  transform: translateX(-50%) rotate(-45deg);
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+
+          transform: translateX(-50%) rotate(-45deg);
 }
 
 .name-block,
@@ -1323,20 +1317,40 @@ textarea + button {
 .modal-content-appear {
   display: block;
 
-  animation-name: move;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  -webkit-animation-name: move;
 
-  animation-fill-mode: forwards;
+          animation-name: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+
+  -webkit-animation-fill-mode: forwards;
+
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-480px);
+            transform: translateX(-480px);
+  }
 }
 
 @keyframes move {
   0% {
-    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
   }
 
   100% {
-    transform: translateX(-480px);
+    -webkit-transform: translateX(-480px);
+            transform: translateX(-480px);
   }
 }
 
@@ -1386,7 +1400,8 @@ textarea + button {
   border: 2px solid black;
   border-bottom: transparent;
   border-left: transparent;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .breadcrumbs li:last-child::after {
@@ -1575,7 +1590,8 @@ input[name="color"] + label::before {
   height: 23px;
 
   background-color: #dbdbdb;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 input[name="color"] + label:hover::before {
@@ -1596,7 +1612,8 @@ input[name="color"]:checked + label::after {
   height: 23px;
 
   background: #dbdbdb url("../img/icon-tick.png") no-repeat 50% 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 input[name="color"] + label:hover::after {
@@ -1641,7 +1658,8 @@ input[name="bluetooth"] + label::before {
 
   border: 2px solid #c6c6c6;
   border-radius: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 input[name="bluetooth"] + label:hover::before {
@@ -1666,7 +1684,8 @@ input[name="bluetooth"]:checked + label::after {
   background: url("../img/icon-radio.png") no-repeat 50% 50%;
   border: 2px solid #c6c6c6;
   border-radius: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 input[name="bluetooth"]:checked + label:hover::after {
@@ -2090,7 +2109,8 @@ a .logo-footer:active {
   left: 0;
 
   background-image: url("../img/sprite.png");
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer-login {
@@ -2201,9 +2221,34 @@ a .logo-footer:active {
   width: 164px;
   margin-top: -3px;
 
-  font-weight: lighter;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   letter-spacing: normal;
 }
+
+
+/*.address {
+  float: left;
+  width: 203px;
+  margin-top: -3px;
+
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  letter-spacing: 0;
+}
+
+.phone {
+  float: right;
+  width: 164px;
+  margin-top: -3px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: lighter;
+  letter-spacing: normal;
+}*/
 
 .footer-social {
   float: left;
@@ -2268,215 +2313,257 @@ a .logo-footer:active {
   width: 71px;
   height: 87px;
 
-  background-position: -10px -10px;
+  background-position: -56px -56px;
+}
+
+.sprite-icon-cam-hvr {
+  width: 71px;
+  height: 87px;
+
+  background-position: -239px -56px;
 }
 
 .sprite-icon-dji {
   width: 260px;
   height: 100px;
 
-  background-position: -101px -10px;
+  background-position: -422px -56px;
 }
 
 .sprite-icon-dji-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -10px -130px;
+  background-position: -794px -56px;
 }
 
 .sprite-icon-fb {
   width: 39px;
   height: 38px;
 
-  background-position: -381px -10px;
+  background-position: -56px -268px;
 }
 
 .sprite-icon-fittracker {
   width: 107px;
   height: 65px;
 
-  background-position: -440px -10px;
+  background-position: -207px -268px;
+}
+
+.sprite-icon-fittracker-hvr {
+  width: 107px;
+  height: 65px;
+
+  background-position: -426px -268px;
 }
 
 .sprite-icon-footer-cart {
   width: 12px;
   height: 12px;
 
-  background-position: -567px -10px;
+  background-position: -645px -268px;
 }
 
 .sprite-icon-footer-cart-hvr {
   width: 12px;
   height: 12px;
 
-  background-position: -567px -42px;
+  background-position: -769px -268px;
 }
 
 .sprite-icon-footer-compare {
   width: 10px;
   height: 10px;
 
-  background-position: -381px -74px;
+  background-position: -893px -268px;
 }
 
 .sprite-icon-footer-compare-hvr {
   width: 10px;
   height: 10px;
 
-  background-position: -567px -74px;
+  background-position: -1015px -268px;
 }
 
 .sprite-icon-footer-user {
   width: 13px;
   height: 12px;
 
-  background-position: -381px -104px;
+  background-position: -893px -390px;
 }
 
 .sprite-icon-footer-user-hvr {
   width: 13px;
   height: 12px;
 
-  background-position: -414px -104px;
+  background-position: -1018px -390px;
 }
 
 .sprite-icon-gopro {
   width: 260px;
   height: 100px;
 
-  background-position: -290px -136px;
+  background-position: -56px -514px;
 }
 
 .sprite-icon-gopro-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -10px -256px;
+  background-position: -428px -514px;
 }
 
 .sprite-icon-header-cart {
   width: 12px;
   height: 12px;
 
-  background-position: -447px -104px;
+  background-position: -800px -514px;
 }
 
 .sprite-icon-header-compare {
   width: 10px;
   height: 10px;
 
-  background-position: -479px -104px;
+  background-position: -924px -514px;
 }
 
 .sprite-icon-header-user {
   width: 13px;
   height: 12px;
 
-  background-position: -509px -104px;
+  background-position: -1046px -514px;
 }
 
 .sprite-icon-htmlacademy {
   width: 27px;
   height: 34px;
 
-  background-position: -290px -256px;
+  background-position: -800px -638px;
 }
 
 .sprite-icon-htmlacademy-hvr {
   width: 27px;
   height: 34px;
 
-  background-position: -337px -256px;
+  background-position: -939px -638px;
 }
 
 .sprite-icon-insta {
   width: 39px;
   height: 38px;
 
-  background-position: -384px -256px;
+  background-position: -1078px -638px;
 }
 
 .sprite-icon-monopode {
   width: 86px;
   height: 117px;
 
-  background-position: -443px -256px;
+  background-position: -56px -784px;
+}
+
+.sprite-icon-monopode-hvr {
+  width: 86px;
+  height: 117px;
+
+  background-position: -254px -784px;
 }
 
 .sprite-icon-plus {
   width: 16px;
   height: 16px;
 
-  background-position: -570px -104px;
+  background-position: -452px -788px;
 }
 
 .sprite-icon-quadrocopter {
   width: 132px;
   height: 69px;
 
-  background-position: -10px -393px;
+  background-position: -580px -784px;
+}
+
+.sprite-icon-quadrocopter-hvr {
+  width: 132px;
+  height: 69px;
+
+  background-position: -824px -784px;
 }
 
 .sprite-icon-radio {
   width: 9px;
   height: 9px;
 
-  background-position: -411px -74px;
+  background-position: -1068px -788px;
 }
 
 .sprite-icon-spgadgets {
   width: 260px;
   height: 100px;
 
-  background-position: -162px -393px;
+  background-position: -452px -965px;
 }
 
 .sprite-icon-spgadgets-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -606px -10px;
+  background-position: -824px -965px;
 }
 
 .sprite-icon-tick {
   width: 12px;
   height: 7px;
 
-  background-position: -606px -130px;
+  background-position: -1166px -56px;
 }
 
 .sprite-icon-tw {
   width: 38px;
   height: 38px;
 
-  background-position: -638px -130px;
+  background-position: -1166px -175px;
 }
 
 .sprite-icon-vive {
   width: 260px;
   height: 100px;
 
-  background-position: -570px -188px;
+  background-position: -1316px -56px;
 }
 
 .sprite-icon-vive-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -549px -308px;
+  background-position: -1316px -268px;
 }
 
 .sprite-icon-vr {
   width: 97px;
   height: 55px;
 
-  background-position: -442px -428px;
+  background-position: -1229px -480px;
+}
+
+.sprite-icon-vr-hover {
+  width: 97px;
+  height: 55px;
+
+  background-position: -1438px -480px;
 }
 
 .sprite-icon-watch {
   width: 56px;
   height: 98px;
 
-  background-position: -559px -428px;
+  background-position: -1229px -647px;
+}
+
+.sprite-icon-watch-hvr {
+  width: 56px;
+  height: 98px;
+
+  background-position: -1397px -647px;
 }
