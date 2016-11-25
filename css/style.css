@@ -298,7 +298,7 @@ input[name="search"] + button:active {
   width: 13px;
   height: 12px;
 
-  background-position: -509px -104px;
+  background-position: -411px -42px;
 }
 
 .header-compare {
@@ -309,7 +309,7 @@ input[name="search"] + button:active {
   width: 10px;
   height: 10px;
 
-  background-position: -479px -104px;
+  background-position: -381px -42px;
 }
 
 .header-cart {
@@ -321,7 +321,7 @@ input[name="search"] + button:active {
   width: 12px;
   height: 12px;
 
-  background-position: -447px -104px;
+  background-position: -349px -42px;
 }
 
 .site-navigation {
@@ -374,7 +374,7 @@ input[name="search"] + button:active {
   width: 16px;
   height: 16px;
 
-  background: url("../img/sprite.png") no-repeat -570px -104px;
+  background: url("../img/sprite.png") no-repeat -349px -96px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -947,7 +947,7 @@ input[name="item"]:not(:checked) + label {
 }
 
 .partners-link-dji {
-  background-position: -101px -10px;
+  background-position: -10px -10px;
 }
 
 .partners-link-dji:hover {
@@ -955,26 +955,27 @@ input[name="item"]:not(:checked) + label {
 }
 
 .partners-link-spgadgets {
-  background-position: -162px -393px;
+  background-position: -539px -10px;
 }
 
 .partners-link-spgadgets:hover {
-  background-position: -606px -10px;
+  background-position: -385px -130px;
 }
+
 .partners-link-gopro {
-  background-position: -290px -136px;
+  background-position: -10px -250px;
 }
 
 .partners-link-gopro:hover {
-  background-position: -10px -256px;
+  background-position: -10px -370px;
 }
 
 .partners-link-vive {
-  background-position: -570px -188px;
+  background-position: -290px -250px;
 }
 
 .partners-link-vive:hover {
-  background-position: -549px -308px;
+  background-position: -290px -370px;
 }
 
 /*INFO*/
@@ -2121,14 +2122,14 @@ a .logo-footer:active {
   width: 13px;
   height: 12px;
 
-  background-position: -381px -104px;
+  background-position: -473px -10px;
 }
 
 .footer-login:hover::before {
   width: 13px;
   height: 12px;
 
-  background-position: -414px -104px;
+  background-position: -506px -10px;
 }
 
 .footer-compare {
@@ -2139,14 +2140,14 @@ a .logo-footer:active {
   width: 10px;
   height: 10px;
 
-  background-position: -381px -74px;
+  background-position: -413px -10px;
 }
 
 .footer-compare:hover::before {
   width: 10px;
   height: 10px;
 
-  background-position: -567px -74px;
+  background-position: -443px -10px;
 }
 
 .footer-cart {
@@ -2157,14 +2158,14 @@ a .logo-footer:active {
   width: 12px;
   height: 12px;
 
-  background-position: -567px -10px;
+  background-position: -349px -10px;
 }
 
 .footer-cart:hover::before {
   width: 12px;
   height: 12px;
 
-  background-position: -567px -42px;
+  background-position: -381px -10px;
 }
 
 .footer-site-navigation {
@@ -2289,11 +2290,11 @@ a .logo-footer:active {
 
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -290px -256px;
+  background-position: -444px -42px;
 }
 
 .footer-copyright a:hover {
-  background-position: -337px -256px;
+  background-position: -491px -42px;
 }
 
 .footer-copyright a:active {
@@ -2309,261 +2310,177 @@ a .logo-footer:active {
   background-repeat: no-repeat;
 }
 
-.sprite-icon-cam {
-  width: 71px;
-  height: 87px;
-
-  background-position: -56px -56px;
-}
-
-.sprite-icon-cam-hvr {
-  width: 71px;
-  height: 87px;
-
-  background-position: -239px -56px;
-}
-
 .sprite-icon-dji {
   width: 260px;
   height: 100px;
 
-  background-position: -422px -56px;
+  background-position: -10px -10px;
 }
 
 .sprite-icon-dji-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -794px -56px;
+  background-position: -10px -130px;
 }
 
 .sprite-icon-fb {
   width: 39px;
   height: 38px;
 
-  background-position: -56px -268px;
-}
-
-.sprite-icon-fittracker {
-  width: 107px;
-  height: 65px;
-
-  background-position: -207px -268px;
-}
-
-.sprite-icon-fittracker-hvr {
-  width: 107px;
-  height: 65px;
-
-  background-position: -426px -268px;
+  background-position: -290px -10px;
 }
 
 .sprite-icon-footer-cart {
   width: 12px;
   height: 12px;
 
-  background-position: -645px -268px;
+  background-position: -349px -10px;
 }
 
 .sprite-icon-footer-cart-hvr {
   width: 12px;
   height: 12px;
 
-  background-position: -769px -268px;
+  background-position: -381px -10px;
 }
 
 .sprite-icon-footer-compare {
   width: 10px;
   height: 10px;
 
-  background-position: -893px -268px;
+  background-position: -413px -10px;
 }
 
 .sprite-icon-footer-compare-hvr {
   width: 10px;
   height: 10px;
 
-  background-position: -1015px -268px;
+  background-position: -443px -10px;
 }
 
 .sprite-icon-footer-user {
   width: 13px;
   height: 12px;
 
-  background-position: -893px -390px;
+  background-position: -473px -10px;
 }
 
 .sprite-icon-footer-user-hvr {
   width: 13px;
   height: 12px;
 
-  background-position: -1018px -390px;
+  background-position: -506px -10px;
 }
 
 .sprite-icon-gopro {
   width: 260px;
   height: 100px;
 
-  background-position: -56px -514px;
+  background-position: -10px -250px;
 }
 
 .sprite-icon-gopro-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -428px -514px;
+  background-position: -10px -370px;
 }
 
 .sprite-icon-header-cart {
   width: 12px;
   height: 12px;
 
-  background-position: -800px -514px;
+  background-position: -349px -42px;
 }
 
 .sprite-icon-header-compare {
   width: 10px;
   height: 10px;
 
-  background-position: -924px -514px;
+  background-position: -381px -42px;
 }
 
 .sprite-icon-header-user {
   width: 13px;
   height: 12px;
 
-  background-position: -1046px -514px;
+  background-position: -411px -42px;
 }
 
 .sprite-icon-htmlacademy {
   width: 27px;
   height: 34px;
 
-  background-position: -800px -638px;
+  background-position: -444px -42px;
 }
 
 .sprite-icon-htmlacademy-hvr {
   width: 27px;
   height: 34px;
 
-  background-position: -939px -638px;
+  background-position: -491px -42px;
 }
 
 .sprite-icon-insta {
   width: 39px;
   height: 38px;
 
-  background-position: -1078px -638px;
-}
-
-.sprite-icon-monopode {
-  width: 86px;
-  height: 117px;
-
-  background-position: -56px -784px;
-}
-
-.sprite-icon-monopode-hvr {
-  width: 86px;
-  height: 117px;
-
-  background-position: -254px -784px;
+  background-position: -290px -96px;
 }
 
 .sprite-icon-plus {
   width: 16px;
   height: 16px;
 
-  background-position: -452px -788px;
-}
-
-.sprite-icon-quadrocopter {
-  width: 132px;
-  height: 69px;
-
-  background-position: -580px -784px;
-}
-
-.sprite-icon-quadrocopter-hvr {
-  width: 132px;
-  height: 69px;
-
-  background-position: -824px -784px;
+  background-position: -349px -96px;
 }
 
 .sprite-icon-radio {
   width: 9px;
   height: 9px;
 
-  background-position: -1068px -788px;
+  background-position: -385px -96px;
 }
 
 .sprite-icon-spgadgets {
   width: 260px;
   height: 100px;
 
-  background-position: -452px -965px;
+  background-position: -539px -10px;
 }
 
 .sprite-icon-spgadgets-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -824px -965px;
+  background-position: -385px -130px;
 }
 
 .sprite-icon-tick {
   width: 12px;
   height: 7px;
 
-  background-position: -1166px -56px;
+  background-position: -665px -130px;
 }
 
 .sprite-icon-tw {
   width: 38px;
   height: 38px;
 
-  background-position: -1166px -175px;
+  background-position: -697px -130px;
 }
 
 .sprite-icon-vive {
   width: 260px;
   height: 100px;
 
-  background-position: -1316px -56px;
+  background-position: -290px -250px;
 }
 
 .sprite-icon-vive-hvr {
   width: 260px;
   height: 100px;
 
-  background-position: -1316px -268px;
-}
-
-.sprite-icon-vr {
-  width: 97px;
-  height: 55px;
-
-  background-position: -1229px -480px;
-}
-
-.sprite-icon-vr-hover {
-  width: 97px;
-  height: 55px;
-
-  background-position: -1438px -480px;
-}
-
-.sprite-icon-watch {
-  width: 56px;
-  height: 98px;
-
-  background-position: -1229px -647px;
-}
-
-.sprite-icon-watch-hvr {
-  width: 56px;
-  height: 98px;
-
-  background-position: -1397px -647px;
+  background-position: -290px -370px;
 }
