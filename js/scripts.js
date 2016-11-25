@@ -5,34 +5,16 @@
   var form = WriteUsPopup.querySelector("form");
   var Email = WriteUsPopup.querySelector("[name=email]");
   var Letter = WriteUsPopup.querySelector("[name=letter]");
-  // var storageName = localStorage.getItem("Name");
-  // var storageEmail = localStorage.getItem("Email");
     WriteUsLink.addEventListener("click", function(event) {
     event.preventDefault();
     WriteUsPopup.classList.toggle("modal-content-appear");
     Name.focus();
-    // if (storageName) {
-    //   Name.value = storageName;
-    //   Email.focus();
-    // } else {
-    // Name.focus();
-    // }
-    // if (storageEmail) {
-    //   Email.value = storageEmail;
-    //   Letter.focus();
-    // } else {
-    // Email.focus();
-    // }
   });
     form.addEventListener("submit", function(event) {
       if (!Name.value || !Email.value || !Letter.value) {
       event.preventDefault();
       console.log("Введите данные");
      }
-    //  } else {
-    // //   localStorage.setItem("Name", Name.value);
-    // //   localStorage.setItem("Email", Email.value);
-    // // };
   });
     WriteUsClose.addEventListener("click", function(event) {
     event.preventDefault();

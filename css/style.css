@@ -61,6 +61,8 @@ img {
 }
 
 .btn {
+  position: relative;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 21.6px;
@@ -110,8 +112,8 @@ img {
 .visually-hidden {
   display: inline-block;
 
-  text-indent: -9999px;
   vertical-align: top;
+  text-indent: -9999px;
 }
 
 .logo {
@@ -133,7 +135,7 @@ a .logo-header:active {
 }
 
 .header-user {
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .site-search {
@@ -142,7 +144,9 @@ a .logo-header:active {
 }
 
 input[name="search"] {
-  height: 36px;
+  height: 49px;
+  margin-top: -8px;
+  padding-bottom: 8px;
   padding-left: 35px;
 
   font-size: 15px;
@@ -166,8 +170,12 @@ input[name="search"]:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-input[name="search"]:hover :-moz-placeholder {
+input[name="search"]:hover:-moz-placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+input[name="search"]::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 input[name="search"]:hover::-webkit-input-placeholder {
@@ -175,6 +183,10 @@ input[name="search"]:hover::-webkit-input-placeholder {
 }
 
 input[name="search"]:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input[name="search"]:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -215,6 +227,7 @@ input[name="search"] + button::after {
 input[name="search"]:focus + button,
 input[name="search"]:focus + button::after {
   display: inline-block;
+
   vertical-align: top;
 }
 
@@ -228,12 +241,12 @@ input[name="search"] + button:hover {
 input[name="search"] + button:active {
   display: inline-block;
 
+  vertical-align: top;
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #000000;
   border: none;
   outline: none;
-  vertical-align: top;
 }
 
 .user-navigation {
@@ -552,7 +565,7 @@ h2 {
   display: block;
   width: 220px;
   margin-bottom: 53px;
-  margin-left: 2px;
+  margin-left: -1px;
 
   line-height: 40px;
 }
@@ -569,10 +582,10 @@ input[name="item"] + label {
   margin-right: 20px;
 
   font-size: 0;
+  vertical-align: top;
 
   border: 3px solid #000000;
   border-radius: 50%;
-  vertical-align: top;
 }
 
 input[name="item"]:not(:checked) + label:hover {
@@ -593,7 +606,6 @@ input[name="item"]:not(:checked) + label {
 
   vertical-align: top;
   text-align: left;
-
 }
 
 .characteristics b {
@@ -604,8 +616,8 @@ input[name="item"]:not(:checked) + label {
   font-size: 36px;
   line-height: 43.2px;
   font-family: "Gilroy", "Arial", sans-serif;
-  color: #000000;
   vertical-align: top;
+  color: #000000;
 }
 
 .characteristics p {
@@ -634,6 +646,10 @@ input[name="item"]:not(:checked) + label {
   width: 398px;
 }
 
+.monopode a {
+  margin-left: 2px;
+}
+
 .fittracker {
   margin-right: -4px;
   margin-bottom: 96px;
@@ -654,6 +670,10 @@ input[name="item"]:not(:checked) + label {
 
 .fittracker .description {
   width: 465px;
+}
+
+.fittracker a {
+  margin-left: -1px;
 }
 
 .quadrocopter {
@@ -831,6 +851,7 @@ input[name="item"]:not(:checked) + label {
 #btn-warranty:checked ~ .services-slider #slide-warranty,
 #btn-credit:checked ~ .services-slider #slide-credit {
   display: inline-block;
+
   vertical-align: top;
 }
 
@@ -916,7 +937,9 @@ input[name="item"]:not(:checked) + label {
 
 .services-slider-controls label:hover {
   background: url("../img/services-controls-hover.png") no-repeat left;
+  background-color: none;
 }
+
 .services-slider-controls label:active {
   color: rgba(0, 0, 0, 1);
 }
@@ -1023,8 +1046,9 @@ input[name="item"]:not(:checked) + label {
   display: inline-block;
   width: 260px;
 
-  background-size: 260px;
   vertical-align: top;
+
+  background-size: 260px;
 }
 
 /*ABOUT*/
@@ -1124,6 +1148,7 @@ iframe {
   font-size: 0;
 
   background-color: #ffffff;
+  border: 3px solid transparent;
   box-shadow: 0 4px 50px -5px rgba(4, 6, 6, 0.75);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1178,7 +1203,6 @@ iframe {
   top: 49%;
 
   -webkit-transform: translateX(-50%) rotate(-45deg);
-
           transform: translateX(-50%) rotate(-45deg);
 }
 
@@ -1213,11 +1237,12 @@ iframe {
   padding-left: 20px;
 
   font-size: 14px;
+  vertical-align: top;
   color: rgba(70, 70, 70, 1);
 
   background-color: rgba(242, 242, 242, 0.5);
   border: none;
-  vertical-align: top;
+  border: 3px solid transparent;
 }
 
 .modal-content input:hover {
@@ -1225,8 +1250,6 @@ iframe {
 }
 
 .modal-content input:focus {
-  box-sizing: border-box;
-
   background-color: #ffffff;
   border: 3px solid rgba(203, 203, 203, 0.5);
   outline: none;
@@ -1247,6 +1270,13 @@ input[name="name"]::-webkit-input-placeholder {
 }
 
 input[name="name"]:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+input[name="name"]::placeholder {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -1274,6 +1304,13 @@ input[name="email"]:-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
+input[name="email"]::placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .modal-content textarea {
   width: 760px;
   height: 156px;
@@ -1284,7 +1321,7 @@ input[name="email"]:-ms-input-placeholder {
   color: rgba(70, 70, 70, 1);
 
   background-color: rgba(242, 242, 242, 0.5);
-  border: none;
+  border: 3px solid transparent;
 }
 
 textarea:-moz-placeholder {
@@ -1308,9 +1345,14 @@ textarea:-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
 }
 
-textarea:focus {
-  box-sizing: border-box;
+textarea::placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
 
+textarea:focus {
   background-color: #ffffff;
   border: 3px solid rgba(203, 203, 203, 0.5);
   outline: none;
@@ -1328,7 +1370,6 @@ textarea + button {
   display: block;
 
   -webkit-animation-name: move;
-
           animation-name: move;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -1336,7 +1377,6 @@ textarea + button {
           animation-timing-function: ease-out;
 
   -webkit-animation-fill-mode: forwards;
-
           animation-fill-mode: forwards;
 }
 
@@ -1407,12 +1447,13 @@ textarea + button {
   margin-bottom: 3px;
   margin-left: 10px;
 
+  vertical-align: baseline;
+
   border: 2px solid black;
   border-bottom: transparent;
   border-left: transparent;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  vertical-align: baseline;
 }
 
 .breadcrumbs li:last-child::after {
@@ -1548,8 +1589,8 @@ form .title {
   font-size: 14px;
   line-height: 23px;
   font-family: "Gilroy", "Arial", sans-serif;
-  color: rgba(0, 0, 0, 0.2);
   vertical-align: top;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .price-control input {
@@ -1645,8 +1686,9 @@ input[name="color"] + label:active::after {
 }
 
 .aside-container a {
-  padding: 0 40px;
   position: relative;
+
+  padding: 0 40px;
 }
 
 .aside-container a:hover {
@@ -1728,10 +1770,10 @@ input[name="bluetooth"]:checked + label:hover::after {
   font-size: 16px;
   line-height: 19.2px;
   font-family: "Gilroy", "Arial", sans-serif;
+  vertical-align: middle;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  vertical-align: middle;
 }
 
 .sorting-category {
@@ -1742,8 +1784,8 @@ input[name="bluetooth"]:checked + label:hover::after {
 
   list-style: none;
   font-size: 0;
-  vertical-align: middle;
   font-size: 0;
+  vertical-align: middle;
 }
 
 .sorting-category li {
@@ -1790,10 +1832,11 @@ input[name="bluetooth"]:checked + label:hover::after {
 
   display: inline-block;
 
+  vertical-align: top;
+
   border: 9px solid rgba(0, 0, 0, 0.2);
   border-right-color: transparent;
   border-left-color: transparent;
-  vertical-align: top;
 }
 
 .sorting-arrow.top::before {
@@ -1909,6 +1952,7 @@ input[name="bluetooth"]:checked + label:hover::after {
 
   letter-spacing: 0.2em;
 
+  background-color: transparent;
   border: none;
 }
 
@@ -1946,6 +1990,7 @@ input[name="bluetooth"]:checked + label:hover::after {
 .paginator-number {
   display: inline-block;
   margin-left: 25px;
+
   vertical-align: top;
 }
 
@@ -2243,28 +2288,6 @@ a .logo-footer:active {
   letter-spacing: normal;
 }
 
-
-/*.address {
-  float: left;
-  width: 203px;
-  margin-top: -3px;
-
-  font-weight: lighter;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  letter-spacing: 0;
-}
-
-.phone {
-  float: right;
-  width: 164px;
-  margin-top: -3px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: lighter;
-  letter-spacing: normal;
-}*/
-
 .footer-social {
   float: left;
   margin-left: 506px;
@@ -2278,10 +2301,11 @@ a .logo-footer:active {
   height: 38px;
   margin-right: 15px;
 
+  vertical-align: top;
+
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   opacity: 0.3;
-  vertical-align: top;
 }
 
 .social-btn:hover {
@@ -2303,10 +2327,11 @@ a .logo-footer:active {
   width: 27px;
   height: 34px;
 
+  vertical-align: top;
+
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -444px -42px;
-  vertical-align: top;
 }
 
 .footer-copyright a:hover {
